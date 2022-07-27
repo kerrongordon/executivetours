@@ -1,0 +1,43 @@
+{{ define "main" }}
+
+{{ if site.Data.homepage.slider.enable }}
+{{ with site.Data.homepage.slider }}
+<section class="page-title bg-2" style="background-image: url({{.image|absLangURL}})">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="block">
+            <h1>Our Services</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{{ end }}
+{{ end }}
+
+{{ .Resources.Get "image/battle-of-the-forts.jpg" }}
+<section class="service" id="services">
+    <div class="container">
+      <div class="row">
+        {{ range (where site.RegularPages "Type" "services") }}
+        <div class="col-lg-4 col-md-4 col-sm-6">
+          <a href="{{ .Params.url | absURL }}">
+          <div class="service-item">
+            {{ with resources.Get .Params.cover.image }}
+            {{ with .Resize ("400x webp") }}
+              <img src="{{ .RelPermalink }}" alt="{{ .Title }}" class="card-img-top rounded">
+            {{ end }}
+            {{ end }}
+            <h4>{{ .Title }}</h4>
+            <p>{{ .Content | truncate 100 }}</p>
+          </div>
+        </a>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+
+
+{{ end }}

@@ -1,0 +1,31 @@
+<head>
+    <meta charset="utf-8">
+    <title>{{ .Site.Title }}</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Creative Agency Bootstrap Template">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="author" content="Themefisher">
+    <meta name="generator" content="Themefisher Airspace Template v1.0">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href='{{ "" | absLangURL }}images/favicon.png' />
+
+    <!-- bootstrap.min css -->
+    <link rel="stylesheet" href='{{ "" | absLangURL }}plugins/bootstrap/bootstrap.min.css'>
+    <!-- Ionic Icon Css -->
+    <link rel="stylesheet" href='{{ "" | absLangURL }}plugins/Ionicons/css/ionicons.min.css'>
+    <!-- animate.css -->
+    <link rel="stylesheet" href='{{ "" | absLangURL }}plugins/animate-css/animate.css'>
+    <!-- Magnify Popup -->
+    <link rel="stylesheet" href='{{ "" | absLangURL }}plugins/magnific-popup/magnific-popup.css'>
+    <!-- Slick CSS -->
+    <link rel="stylesheet" href='{{ "" | absLangURL }}plugins/slick/slick.css'>
+
+    {{ if site.Data.homepage.slider.enable }}
+    <link href="http://fonts.cdnfonts.com/css/dm-serif-display" rel="stylesheet">
+    {{ end }}
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href='{{ "" | absLangURL }}css/style.css'>
+
+  </head>

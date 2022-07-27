@@ -1,0 +1,56 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'Executive Tours'
+subtitle = 'Come and Explore Grenada with Executive Tours'
+cta = '#'
+
+
+theme = 'Tours'
+
+logo = ''
+
+
+[menu]
+
+    [[menu.main]]
+    identifier = 'home'
+    name = 'Home'
+    URL = '/'
+    weight = 1
+
+    [[menu.main]]
+    identifier = 'services'
+    name = 'Services'
+    URL = '/services/'
+    weight = 2
+
+    [[menu.main]]
+    identifier = 'contact'
+    name = 'Contact'
+    URL = '/contact/'
+    weight = 4
+
+    [[menu.main]]
+    identifier = 'portfolio'
+    name = 'Portfolio'
+    URL = '#'
+    weight = 3
+
+        [[menu.main]]
+        parent = 'portfolio'
+        name = 'Portfolio Filter'
+        URL = '#'
+        weight = 1
+
+        [[menu.main]]
+        parent = 'portfolio'
+        name = 'Portfolio Single'
+        URL = '#'
+        weight = 2
+
+        [[menu.main]]
+        identifier = 'submenu'
+        parent = 'portfolio'
+        name = 'Portfolio testing'
+        URL = '#'
+        weight = 3

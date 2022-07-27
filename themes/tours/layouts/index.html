@@ -1,0 +1,201 @@
+{{ define "main" }}
+
+{{ if site.Data.homepage.slider.enable }}
+{{ with site.Data.homepage.slider }}
+<section class="slider" style="background-image: url({{.image}})">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="block">
+					<h1 class="animated fadeInUp" style="font-family: 'DM Serif Display', sans-serif;">{{ .title | markdownify }}</h1>
+					<p class="animated fadeInUp" >{{ .subtitle | markdownify }}</p>
+          {{ if .button.enable }}
+          {{ with .button }}
+					  <a href="{{ .link }}" class="btn btn-main animated fadeInUp" >{{ .label }}</a>
+          {{ end }}
+          {{ end }}
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+{{ end }}
+{{ end }}
+
+
+{{ if site.Data.homepage.about.enable }}
+{{ with site.Data.homepage.about }}
+<section class="about section">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-7">
+				<div class="block">
+					<div class="section-title">
+						<h2>{{ .title | markdownify }}</h2>
+						<p>{{ .subtitle | markdownify }}</p>
+					</div>
+					<p>{{ .content | markdownify }}</p>
+				</div>
+			</div>
+			<div class="col-md-5">
+				<div class="block">
+          {{ with resources.Get .image }}
+          {{ with .Resize ("800x webp") }}
+            <img src="{{ .RelPermalink }}" alt="{{ .Params.cover.alt }}" class="img-fluid rounded">
+          {{ end }}
+          {{ end }}
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+{{ end }}
+{{ end }}
+
+
+{{ if site.Data.homepage.feature.enable }}
+{{ with site.Data.homepage.feature }}
+<section class="feature bg-2 overly" style="background-image: url({{.image}})">
+  <div class="container">
+    <div class="row justify-content-end">
+      <div class="col-md-6">
+        <h2 class="section-subtitle">{{ .title | markdownify }}</h2>
+        {{ .content | markdownify }}
+        {{ if .button.enable }}
+        {{ with .button }}
+        <a href="{{ .link }}" class="btn btn-view-works">{{ .label }}</a>
+        {{ end }}
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+{{ .Resources.Get "image/battle-of-the-forts.jpg" }}
+<section class="service" id="services">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <div class="section-title">
+          <h2>Our Services</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      {{ range first 8 (where site.RegularPages "Type" "services") }}
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <a href="{{ .Params.url | absURL }}">
+        <div class="service-item">
+          {{ with resources.Get .Params.cover.image }}
+            {{ with .Resize ("300x webp") }}
+              <img src="{{ .RelPermalink }}" alt="{{ .Title }}" class="card-img-top rounded">
+            {{ end }}
+            {{ end }}
+          <h4>{{ .Title }}</h4>
+          <p>{{ .Content | truncate 80 }}</p>
+        </div>
+      </a>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+
+{{- partial "call-to-action.html" . -}}
+
+<section class="testimonial">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title text-center">
+          <h2>Fun Facts About Us</h2>
+          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, <br> there live the
+            blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+        </div>
+      </div>
+    </div>
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <div class="block">
+          <ul class="counter-box clearfix">
+            <li>
+              <div class="counter-item">
+                <i class="ion-ios-chatboxes-outline"></i>
+                <h4 class="count" data-count="99">0</h4>
+                <span>Cups Of Coffee</span>
+              </div>
+            </li>
+            <li>
+              <div class="counter-item">
+                <i class="ion-ios-glasses-outline"></i>
+                <h4 class="count" data-count="45">0</h4>
+                <span>Article Written</span>
+              </div>
+            </li>
+            <li>
+              <div class="counter-item">
+                <i class="ion-ios-compose-outline"></i>
+                <h4 class="count" data-count="125">0</h4>
+                <span>Projects Completed</span>
+              </div>
+            </li>
+            <li>
+              <div class="counter-item">
+                <i class="ion-ios-timer-outline"></i>
+                <h4 class="count" data-count="200">0</h4>
+                <span>Combined Projects</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-5 col-md-offset-1">
+        <div class="testimonial-carousel text-center">
+          <div class="testimonial-slider owl-carousel">
+            <div>
+              <i class="ion-quote"></i>
+              <p>"This Company created an e-commerce site with the tools to make our business a success, with innovative
+                ideas we feel that our site has unique elements that make us stand out from the crowd."</p>
+              <div class="user">
+                <img src="images/item-img1.jpg" alt="Pepole">
+                <p><span>Rose Ray</span> CEO-Themefisher</p>
+              </div>
+            </div>
+            <div>
+              <i class="ion-quote"></i>
+              <p>"This Company created an e-commerce site with the tools to make our business a success, with innovative
+                ideas we feel that our site has unique elements that make us stand out from the crowd."</p>
+              <div class="user">
+                <img src="images/item-img1.jpg" alt="Pepole">
+                <p><span>Rose Ray</span> CEO-Themefisher</p>
+              </div>
+            </div>
+            <div>
+              <i class="ion-quote"></i>
+              <p>"This Company created an e-commerce site with the tools to make our business a success, with innovative
+                ideas we feel that our site has unique elements that make us stand out from the crowd."</p>
+              <div class="user">
+                <img src="images/item-img1.jpg" alt="Pepole">
+                <p><span>Rose Ray</span> CEO-Themefisher</p>
+              </div>
+            </div>
+            <div>
+              <i class="ion-quote"></i>
+              <p>"This Company created an e-commerce site with the tools to make our business a success, with innovative
+                ideas we feel that our site has unique elements that make us stand out from the crowd."</p>
+              <div class="user">
+                <img src="images/item-img1.jpg" alt="Pepole">
+                <p><span>Rose Ray</span> CEO-Themefisher</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ end }}
