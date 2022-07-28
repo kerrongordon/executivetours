@@ -42,3 +42,15 @@
     <script src='{{ "" | absLangURL }}plugins/google-map/map.js'></script>
 
     <script src='{{ "" | absLangURL }}js/script.js'></script>
+
+    <script>
+        if (window.netlifyIdentity) {
+          window.netlifyIdentity.on("init", user => {
+            if (!user) {
+              window.netlifyIdentity.on("login", () => {
+                document.location.href = "/admin/";
+              });
+            }
+          });
+        }
+      </script>
