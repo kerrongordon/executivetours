@@ -29,7 +29,7 @@ heroSectionSwo:
   button: false
   buttontitle: ""
   buttonurl: ""
-  body: test
+  body: ""
 serviceSection:
   enable: true
   button: true
