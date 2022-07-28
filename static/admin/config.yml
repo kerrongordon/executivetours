@@ -14,7 +14,7 @@ collections:
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Url', name: 'url', widget: 'hidden', default: '{{slug}}'}
+      - { label: 'Url', name: 'url', widget: 'hidden', default: '{{title.slug}}'}
       - {
           label: 'Cover',
           name: 'cover',
@@ -22,8 +22,8 @@ collections:
           fields:
             [
               { label: 'Image', name: 'image', widget: 'image' },
-              { label: 'Alt', name: 'alt', widget: 'hidden', default: '{{slug}}' },
-              { label: 'Caption', name: 'caption', widget: 'hidden', default: '{{slug}}' },
+              { label: 'Alt', name: 'alt', widget: 'hidden', default: '{{title.slug}}' },
+              { label: 'Caption', name: 'caption', widget: 'hidden', default: '{{title.slug}}' },
             ]
         }
       - { label: 'Services', name: 'services', widget: 'list', fields: [{ label: 'Title', name: 'title', widget: 'string' }] }
