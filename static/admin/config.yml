@@ -59,7 +59,7 @@ collections:
                   { label: 'Enable Section', name: 'enable', widget: 'boolean' },
                   { label: 'Title', name: 'title', widget: 'string', required: false },
                   { label: 'Image', name: 'image', widget: 'image' },
-                  { label: 'Body', name: 'body', widget: 'markdown' },
+                  { label: 'Body', name: 'body', widget: 'markdown', required: false },
                   { label: 'Enable Button', name: 'button', widget: 'boolean' },
                   { label: 'Button Title', name: 'buttontitle', widget: 'string', required: false },
                   { label: 'Button Url', name: 'buttonurl', widget: 'string', required: false }
