@@ -1,21 +1,18 @@
 ---
 title: 'Go Where The Water Falls'
 draft: false
-url: '/services/go-where-the-water-falls'
-cover:
-    image: 'images/go-where-the-water-falls.jpg'
-    alt: 'go-where-the-water-falls'
-    caption: 'go-where-the-water-falls'
+layout: 'services'
+image: 'images/go-where-the-water-falls.jpg'
 
 services:
-    - title: 'Annandale Waterfall – Closest Falls to St. George’s City, which hosts a lovely Tree house Restaurant'
-    - title: 'Seven Sisters Waterfall- A family of falls which flows one into the other, inside the rainforest reserves'
-    - title: 'Concord Waterfall- Surrounded by lush green vegetation'
-    - title: 'Rainbow Falls- You get to judge where this fall gets its name from'
-    - title: 'Adelphi Falls-tucked away in the middle of the rainforest, not too far from the Grand Etang Lake'
-    - title: 'Mt Carmel Waterfall- Grenada’s highest Waterfall'
-    - title: 'Pasture Falls- Sits peacefully between the surrounding rainforest'
-    - title: 'Golden Falls- Nature’s queen of Sulphur, with both hot and cold fountains, from the same Waterfall'
+    - 'Annandale Waterfall – Closest Falls to St. George’s City, which hosts a lovely Tree house Restaurant'
+    - 'Seven Sisters Waterfall- A family of falls which flows one into the other, inside the rainforest reserves'
+    - 'Concord Waterfall- Surrounded by lush green vegetation'
+    - 'Rainbow Falls- You get to judge where this fall gets its name from'
+    - 'Adelphi Falls-tucked away in the middle of the rainforest, not too far from the Grand Etang Lake'
+    - 'Mt Carmel Waterfall- Grenada’s highest Waterfall'
+    - 'Pasture Falls- Sits peacefully between the surrounding rainforest'
+    - 'Golden Falls- Nature’s queen of Sulphur, with both hot and cold fountains, from the same Waterfall'
 ---
 
 Who ever said it was a bad idea to chase waterfalls? Home to many breathe taking sites, Grenada hosts so much untold beauties.

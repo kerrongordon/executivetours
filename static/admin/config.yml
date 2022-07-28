@@ -8,23 +8,12 @@ collections:
     label: 'Services'
     folder: 'content/services'
     create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    slug: '{{slug}}'
     editor:
       preview: false
     fields:
       - { label: 'Title', name: 'title', widget: 'string', required: true }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Url', name: 'url', widget: 'hidden', default: '/services/{{.Title}}'}
-      - {
-          label: 'Cover',
-          name: 'cover',
-          widget: 'object',
-          fields:
-            [
-              { label: 'Image', name: 'image', widget: 'image', required: true },
-              { label: 'Alt', name: 'alt', widget: 'hidden', default: '{{.Title}}' },
-              { label: 'Caption', name: 'caption', widget: 'hidden', default: '{{.Title}}' },
-            ]
-        }
-      - { label: 'Services', name: 'services', widget: 'list', fields: [{ label: 'Title', name: 'title', widget: 'string' }] }
+      - {label: "Layout", name: "layout", widget: "hidden", default: "services"}
+      - { label: 'Image', name: 'image', widget: 'image', required: true }
+      - { label: 'Services', name: 'services', widget: 'list' }
       - { label: 'Body', name: 'body', widget: 'markdown', required: true }

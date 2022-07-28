@@ -1,19 +1,16 @@
 ---
 title: 'Cocoa Sensation'
 draft: false
-url: '/services/cocoa-sensation'
-cover:
-    image: 'images/cocoa-sensation.jpg'
-    alt: 'cocoa-sensation'
-    caption: 'cocoa-sensation'
+layout: 'services'
+image: 'images/cocoa-sensation.jpg'
 
 services:
-    - title: 'Belmont Estate Plantation'
-    - title: 'Grenada Chocolate Factory'
-    - title: 'Diamond Estate Chocolate factory'
-    - title: 'Crayfish Bay Chocolate factory'
-    - title: 'Tri-Island Chocolate'
-    - title: 'Grenada Chocolate Museum'
+    - 'Belmont Estate Plantation'
+    - 'Grenada Chocolate Factory'
+    - 'Diamond Estate Chocolate factory'
+    - 'Crayfish Bay Chocolate factory'
+    - 'Tri-Island Chocolate'
+    - 'Grenada Chocolate Museum'
 ---
 
 Savour the dark and healthy, pure pleasures of Grenada’s luxury organic cocoa products, as we escape to the estates and factories to witness the production process. Get the opportunity to see the cocoa in its natural habitat, break a pod and enjoy the delicious fruit while in the beautiful tropics.

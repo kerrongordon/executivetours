@@ -1,20 +1,17 @@
 ---
 title: 'City Tour'
 draft: false
-url: '/services/city-tour'
-cover:
-    image: 'images/city-tour.jpg'
-    alt: 'city-tour'
-    caption: 'city-tour'
+layout: 'services'
+image: 'images/city-tour.jpg'
 
 services:
-    - title: 'Fort George'
-    - title: 'Chocolate Museum'
-    - title: 'Churches'
-    - title: 'Bayside of the City'
-    - title: 'Harbour side of the City'
-    - title: 'First City'
-    - title: 'Picture Opportunity'
+    - 'Fort George'
+    - 'Chocolate Museum'
+    - 'Churches'
+    - 'Bayside of the City'
+    - 'Harbour side of the City'
+    - 'First City'
+    - 'Picture Opportunity'
 ---
 
 A holistic experience welcoming you with open arms to embark on a journey through the unique city of St. George’s. Enjoy majestic panoramic views of the horse-shoe-shaped harbor, the pristine Grand Anse Beach, and so much more, as Fort George awards you the opportunity to capture post card worthy pictures from Grenada’s oldest Fort, formerly known as Fort Royal. For our lovers of chocolate, we’ve got a treat for your taste buds.

@@ -86,9 +86,9 @@
     <div class="row">
       {{ range first 8 (where site.RegularPages "Type" "services") }}
       <div class="col-lg-3 col-md-4 col-sm-6">
-        <a href="{{ .Params.url | absURL }}">
+        <a href="{{ .RelPermalink }}">
         <div class="service-item">
-          {{ with resources.Get .Params.cover.image }}
+          {{ with resources.Get .Params.image }}
             {{ with .Resize ("300x webp") }}
               <img src="{{ .RelPermalink }}" alt="{{ .Title }}" class="card-img-top rounded">
             {{ end }}

@@ -5,13 +5,20 @@
 <section class="service" id="services">
     <div class="container">
       <div class="row">
+        <div class="col-12 text-center">
+          <div class="section-title">
+            {{ .Content }}
+          </div>
+        </div>
+      </div>
+      <div class="row">
         {{ range (where site.RegularPages "Type" "services") }}
         <div class="col-lg-4 col-md-4 col-sm-6">
-          <a href="{{ .Params.url | absURL }}">
+          <a href="{{ .RelPermalink }}">
           <div class="service-item">
-            {{ with resources.Get .Params.cover.image }}
+            {{ with resources.Get .Params.image }}
             {{ with .Resize ("400x webp") }}
-              <img src="{{ .RelPermalink }}" alt="{{ .Title }}" class="card-img-top rounded">
+              <img src="{{ .RelPermalink }}" class="card-img-top rounded">
             {{ end }}
             {{ end }}
             <h4>{{ .Title }}</h4>

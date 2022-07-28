@@ -1,16 +1,13 @@
 ---
 title: 'Temperature Check'
 draft: false
-url: '/services/temperature-check'
-cover:
-    image: 'images/temperature-check.jpg'
-    alt: 'temperature-check'
-    caption: 'temperature-check'
+layout: 'services'
+image: 'images/temperature-check.jpg'
 
 services:
-    - title: 'Seven Sister’s Falls'
-    - title: 'Adelphi Waterfall'
-    - title: 'Clabony Sulphur Hot Spring'
+    - 'Seven Sister’s Falls'
+    - 'Adelphi Waterfall'
+    - 'Clabony Sulphur Hot Spring'
 ---
 
 Are you a lover of nature? Do you enjoy a good harsh or hike? Then we got just the right combination for you. Located in the middle of the rainforest reserves, sits one of the wonders of the islands, the seven sister’s waterfall.

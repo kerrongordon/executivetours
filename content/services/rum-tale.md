@@ -1,17 +1,14 @@
 ---
 title: 'Rum Tale'
 draft: false
-url: '/services/rum-tale'
-cover:
-    image: 'images/rum-tale.jpg'
-    alt: 'rum-tale'
-    caption: 'rum-tale'
+layout: 'services'
+image: 'images/rum-tale.jpg'
 
 services:
-    - title: 'River Antoine Rum Distillery'
-    - title: 'Westerhall Rum Distillery'
-    - title: 'Clarke’s Court Rum Distillery'
-    - title: 'Bar Hopping'
+    - 'River Antoine Rum Distillery'
+    - 'Westerhall Rum Distillery'
+    - 'Clarke’s Court Rum Distillery'
+    - 'Bar Hopping'
 ---
 
 Entice your taste buds as you explore the wonders of the Flavours of Grenada’s Locally produced Rums. Journeying to the North of the island to River Antoine Rum Distillery, here you will experience up close and personal, the only authentic fully functional water driven mill on the island.

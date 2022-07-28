@@ -1,17 +1,14 @@
 ---
 title: 'Battle of The Forts'
 draft: false
-url: '/services/battle-of-the-forts'
-cover:
-    image: 'images/battle-of-the-forts.jpg'
-    alt: 'battle-of-the-forts'
-    caption: 'battle-of-the-forts'
+layout: 'services'
+image: 'images/battle-of-the-forts.jpg'
 
 services:
-    - title: 'River Antoine Rum Distillery'
-    - title: 'Westerhall Rum Distillery'
-    - title: 'Clarke’s Court Rum Distillery'
-    - title: 'Bar Hopping'
+    - 'River Antoine Rum Distillery'
+    - 'Westerhall Rum Distillery'
+    - 'Clarke’s Court Rum Distillery'
+    - 'Bar Hopping'
 ---
 
 Breathe in Grenada’s rich history as you stroll through these antique stone fortifications, which hosts astonishing bird’s eye views of the Harbour, the town of St. George, Grand Anse Beach, Point Saline, and so much more.

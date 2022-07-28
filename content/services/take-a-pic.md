@@ -1,11 +1,8 @@
 ---
 title: 'Take a Pic'
 draft: false
-url: '/services/take-a-pic'
-cover:
-    image: 'images/take-a-pic.jpg'
-    alt: 'take-a-pic'
-    caption: 'take-a-pic'
+layout: 'services'
+image: 'images/take-a-pic.jpg'
 
 services:
 ---

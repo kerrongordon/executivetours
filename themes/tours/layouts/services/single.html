@@ -17,9 +17,9 @@
                   <p class="mt-30">{{ .Content }}</p>
               </div>
               <div class="col-lg-6">
-                {{ with resources.Get .Params.cover.image }}
+                {{ with resources.Get .Params.image }}
                 {{ with .Resize ("800x webp") }}
-                  <img src="{{ .RelPermalink }}" alt="{{ .Params.cover.alt }}" class="img-fluid rounded">
+                  <img src="{{ .RelPermalink }}" class="img-fluid rounded">
                 {{ end }}
                 {{ end }}
               </div>
@@ -42,7 +42,7 @@
             {{ range .Params.services }}
             <div class="col-lg-4 col-sm-6">
                 <div class="block">
-                    <p class="mb-3">{{ .title }}</p>
+                    <p class="mb-3">{{ . }}</p>
                 </div>
             </div>
             {{ end }}
