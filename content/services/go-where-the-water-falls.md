@@ -1,7 +1,7 @@
 ---
 title: 'Go Where The Water Falls'
 draft: false
-url: '/service/go-where-the-water-falls'
+url: '/services/go-where-the-water-falls'
 cover:
     image: 'images/go-where-the-water-falls.jpg'
     alt: 'go-where-the-water-falls'

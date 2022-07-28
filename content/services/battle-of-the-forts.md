@@ -1,7 +1,7 @@
 ---
 title: 'Battle of The Forts'
 draft: false
-url: '/service/battle-of-the-forts'
+url: '/services/battle-of-the-forts'
 cover:
     image: 'images/battle-of-the-forts.jpg'
     alt: 'battle-of-the-forts'

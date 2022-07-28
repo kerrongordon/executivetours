@@ -1,7 +1,7 @@
 ---
 title: 'Night Life & Luxury Taxi Services'
 draft: false
-url: '/service/night-life-luxury-taxi-services'
+url: '/services/night-life-luxury-taxi-services'
 cover:
     image: 'images/night-life-luxury-taxi-services.jpg'
     alt: 'night-life-luxury-taxi-services'

@@ -1,7 +1,7 @@
 ---
 title: 'Party On Board!'
 draft: false
-url: '/service/party-on-board'
+url: '/services/party-on-board'
 cover:
     image: 'images/party-on-board.jpg'
     alt: 'party-on-board'

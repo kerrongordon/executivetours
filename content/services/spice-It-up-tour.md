@@ -1,7 +1,7 @@
 ---
 title: 'Spice It Up Tour'
 draft: false
-url: '/service/spice-It-up-tour'
+url: '/services/spice-It-up-tour'
 cover:
     image: 'images/spice-It-up-tour.jpg'
     alt: 'spice-It-up-tour'

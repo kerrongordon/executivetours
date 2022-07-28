@@ -1,7 +1,7 @@
 ---
 title: 'Executive Luxury Transfers'
 draft: false
-url: '/service/executive-luxury-transfers'
+url: '/services/executive-luxury-transfers'
 cover:
     image: 'images/executive-luxury-transfers.jpg'
     alt: 'executive-luxury-transfers'

@@ -1,7 +1,7 @@
 ---
 title: 'City Tour'
 draft: false
-url: '/service/city-tour'
+url: '/services/city-tour'
 cover:
     image: 'images/city-tour.jpg'
     alt: 'city-tour'

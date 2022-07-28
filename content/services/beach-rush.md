@@ -1,7 +1,7 @@
 ---
 title: 'Beach Rush'
 draft: false
-url: '/service/beach-rush'
+url: '/services/beach-rush'
 cover:
     image: 'images/beach-rush.jpg'
     alt: 'beach-rush'

@@ -1,7 +1,7 @@
 ---
 title: 'Tranquil Adventures'
 draft: false
-url: '/service/tranquil-adventures'
+url: '/services/tranquil-adventures'
 cover:
     image: 'images/tranquil-adventures.jpg'
     alt: 'tranquil-adventures'

@@ -1,7 +1,7 @@
 ---
 title: 'Rum Tale'
 draft: false
-url: '/service/rum-tale'
+url: '/services/rum-tale'
 cover:
     image: 'images/rum-tale.jpg'
     alt: 'rum-tale'

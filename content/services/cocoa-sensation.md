@@ -1,7 +1,7 @@
 ---
 title: 'Cocoa Sensation'
 draft: false
-url: '/service/cocoa-sensation'
+url: '/services/cocoa-sensation'
 cover:
     image: 'images/cocoa-sensation.jpg'
     alt: 'cocoa-sensation'

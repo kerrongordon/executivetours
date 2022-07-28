@@ -1,7 +1,7 @@
 ---
 title: 'Temperature Check'
 draft: false
-url: '/service/temperature-check'
+url: '/services/temperature-check'
 cover:
     image: 'images/temperature-check.jpg'
     alt: 'temperature-check'

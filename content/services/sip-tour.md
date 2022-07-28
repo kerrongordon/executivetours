@@ -1,7 +1,7 @@
 ---
 title: 'Sip & Tour'
 draft: false
-url: '/service/sip-tour'
+url: '/services/sip-tour'
 cover:
     image: 'images/sip-tour.jpg'
     alt: 'sip-tour'
