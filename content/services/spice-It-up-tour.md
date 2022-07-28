@@ -5,9 +5,9 @@ layout: 'services'
 image: 'images/spice-It-up-tour.jpg'
 
 services:
-    - 'The Laura Herb & Spice Gardens'
-    - 'The De La Grenade Factory'
-    - 'The Spice Market'
+    - item: 'The Laura Herb & Spice Gardens'
+    - item: 'The De La Grenade Factory'
+    - item: 'The Spice Market'
 ---
 
 Before rebranded as Pure Grenada, this tropical island was formerly known as ‘The Island of Spice.’ Grenada is widely known for its rich spices enjoyed worldwide.

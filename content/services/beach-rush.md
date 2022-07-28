@@ -5,10 +5,10 @@ layout: 'services'
 image: 'images/beach-rush.jpg'
 
 services:
-    - 'Bath Way Beach'
-    - 'Black Bay Beach'
-    - 'Levera Beach'
-    - 'BBC Beach'
+    - item: 'Bath Way Beach'
+    - item: 'Black Bay Beach'
+    - item: 'Levera Beach'
+    - item: 'BBC Beach'
 ---
 
 Get-A- Way for the day as we escape to some of Grenada’s most exotic beaches. Imagine the cool Caribbean Sea breeze hugging your face, while the fine refreshing sand kisses your feet.

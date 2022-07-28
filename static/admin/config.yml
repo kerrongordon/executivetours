@@ -15,5 +15,5 @@ collections:
       - { label: 'Title', name: 'title', widget: 'string', required: true }
       - {label: "Layout", name: "layout", widget: "hidden", default: "services"}
       - { label: 'Image', name: 'image', widget: 'image', required: true }
-      - { label: 'Tour Highlights', name: 'services', widget: 'list', fields: [ {label: "Item", name: "Item", widget: "string"}] }
+      - { label: 'Tour Highlights', name: 'services', widget: 'list', fields: [ {label: "Item", name: "item", widget: "string"}] }
       - { label: 'Body', name: 'body', widget: 'markdown', required: true }
