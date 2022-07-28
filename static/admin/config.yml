@@ -32,10 +32,10 @@ collections:
                 [
                   { label: 'Enable Section', name: 'enable', widget: 'boolean' },
                   { label: 'Title', name: 'title', widget: 'string', required: true },
-                  { label: 'Subtitle', name: 'subtitle', widget: 'string' },
+                  { label: 'Subtitle', name: 'subtitle', widget: 'string', required: false },
                   { label: 'Image', name: 'image', widget: 'image' },
                   { label: 'Enable Button', name: 'button', widget: 'boolean' },
-                  { label: 'Button Title', name: 'buttontitle', widget: 'string' },
+                  { label: 'Button Title', name: 'buttontitle', widget: 'string', required: false },
                   { label: 'Button Url', name: 'buttonurl', widget: 'string' }
                 ]
             }
@@ -45,8 +45,8 @@ collections:
               fields:
                 [
                   { label: 'Enable Section', name: 'enable', widget: 'boolean' },
-                  { label: 'Title', name: 'title', widget: 'string' },
-                  { label: 'Subtitle', name: 'subtitle', widget: 'string' },
+                  { label: 'Title', name: 'title', widget: 'string', required: false },
+                  { label: 'Subtitle', name: 'subtitle', widget: 'string', required: false },
                   { label: 'Body', name: 'body', widget: 'markdown' },
                   { label: 'Image', name: 'image', widget: 'image' }
                 ]
@@ -57,12 +57,12 @@ collections:
               fields:
                 [
                   { label: 'Enable Section', name: 'enable', widget: 'boolean' },
-                  { label: 'Title', name: 'title', widget: 'string'},
+                  { label: 'Title', name: 'title', widget: 'string', required: false },
                   { label: 'Image', name: 'image', widget: 'image' },
                   { label: 'Body', name: 'body', widget: 'markdown' },
                   { label: 'Enable Button', name: 'button', widget: 'boolean' },
-                  { label: 'Button Title', name: 'buttontitle', widget: 'string' },
-                  { label: 'Button Url', name: 'buttonurl', widget: 'string' }
+                  { label: 'Button Title', name: 'buttontitle', widget: 'string', required: false },
+                  { label: 'Button Url', name: 'buttonurl', widget: 'string', required: false }
                 ]
             }
           - { label: 'Service Section',
@@ -71,11 +71,11 @@ collections:
               fields:
                 [
                   { label: 'Enable Section', name: 'enable', widget: 'boolean' },
-                  { label: 'Title', name: 'title', widget: 'string'},
-                  { label: 'Subtitle', name: 'subtitle', widget: 'string' },
+                  { label: 'Title', name: 'title', widget: 'string', required: false},
+                  { label: 'Subtitle', name: 'subtitle', widget: 'string', required: false },
                   { label: 'Enable Button', name: 'button', widget: 'boolean' },
-                  { label: 'Button Title', name: 'buttontitle', widget: 'string' },
-                  { label: 'Button Url', name: 'buttonurl', widget: 'string' }
+                  { label: 'Button Title', name: 'buttontitle', widget: 'string', required: false },
+                  { label: 'Button Url', name: 'buttonurl', widget: 'string', required: false }
                 ]
             }
           - { label: 'Testimonial Section',
@@ -84,8 +84,8 @@ collections:
               fields:
                 [
                   { label: 'Enable Section', name: 'enable', widget: 'boolean' },
-                  { label: 'Title', name: 'title', widget: 'string'},
-                  { label: 'Subtitle', name: 'subtitle', widget: 'string' },
+                  { label: 'Title', name: 'title', widget: 'string', required: false},
+                  { label: 'Subtitle', name: 'subtitle', widget: 'string', required: false },
                 ]
             }
 

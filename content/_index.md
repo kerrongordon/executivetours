@@ -33,9 +33,9 @@ heroSectionSwo:
 serviceSection:
   enable: true
   button: true
-  buttontitle: Book Now
-  buttonurl: https://demo.kgpord.com/
-  title: ok okokokoko
+  buttontitle: View More
+  buttonurl: /services/
+  title: Our Services
   subtitle: testout
 testimonialSection:
   enable: true

@@ -1,18 +1,20 @@
 {{ define "main" }}
 
-{{ if site.Data.homepage.slider.enable }}
-{{ with site.Data.homepage.slider }}
-<section class="slider" style="background-image: url({{.image}})">
+{{ if .Page.Params.heroSection.enable }}
+{{ with .Page.Params.heroSection }}
+{{ with resources.Get .image }}
+{{/*  {{ with .Resize ("1200x webp") }}  */}}
+<section class="slider" style="background-image: url({{.RelPermalink}})">
+{{/*  {{ end }}  */}}
+{{ end }}
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
 				<div class="block">
 					<h1 class="animated fadeInUp" style="font-family: 'DM Serif Display', sans-serif;">{{ .title | markdownify }}</h1>
 					<p class="animated fadeInUp" >{{ .subtitle | markdownify }}</p>
-          {{ if .button.enable }}
-          {{ with .button }}
-					  <a href="{{ .link }}" class="btn btn-main animated fadeInUp" >{{ .label }}</a>
-          {{ end }}
+          {{ if .button }}
+					  <a href="{{ .buttonurl }}" class="btn btn-main animated fadeInUp" >{{ .buttontitle }}</a>
           {{ end }}
 				</div>
 			</div>
@@ -23,8 +25,10 @@
 {{ end }}
 
 
-{{ if site.Data.homepage.about.enable }}
-{{ with site.Data.homepage.about }}
+
+
+{{ if .Page.Params.aboutSection.enable }}
+{{ with .Page.Params.aboutSection }}
 <section class="about section">
 	<div class="container">
 		<div class="row">
@@ -34,7 +38,7 @@
 						<h2>{{ .title | markdownify }}</h2>
 						<p>{{ .subtitle | markdownify }}</p>
 					</div>
-					<p>{{ .content | markdownify }}</p>
+					<p>{{ .body | markdownify }}</p>
 				</div>
 			</div>
 			<div class="col-md-5">
@@ -53,18 +57,24 @@
 {{ end }}
 
 
-{{ if site.Data.homepage.feature.enable }}
-{{ with site.Data.homepage.feature }}
-<section class="feature bg-2 overly" style="background-image: url({{.image}})">
+{{ if .Page.Params.heroSectionSwo.enable }}
+{{ with .Page.Params.heroSectionSwo }}
+{{ with resources.Get .image }}
+{{/*  {{ with .Resize ("1200x webp") }}  */}}
+<section class="feature bg-2 overly" style="background-image: url({{.RelPermalink}})">
+{{/*  {{ end }}  */}}
+{{ end }}
   <div class="container">
     <div class="row justify-content-end">
       <div class="col-md-6">
+        {{ if .title }}
         <h2 class="section-subtitle">{{ .title | markdownify }}</h2>
-        {{ .content | markdownify }}
-        {{ if .button.enable }}
-        {{ with .button }}
-        <a href="{{ .link }}" class="btn btn-view-works">{{ .label }}</a>
         {{ end }}
+        {{ if .body }}
+        <p>{{ .body | markdownify }}</p>
+        {{ end }}
+        {{ if .button }}
+        <a href="{{ .buttonurl }}" class="btn btn-view-works">{{ .buttontitle }}</a>
         {{ end }}
       </div>
     </div>
@@ -74,12 +84,15 @@
 {{ end }}
 
 
+{{ if .Page.Params.serviceSection.enable }}
+{{ with .Page.Params.serviceSection }}
 <section class="service" id="services">
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
         <div class="section-title">
-          <h2>Our Services</h2>
+          <h2>{{ .title | markdownify }}</h2>
+          <p>{{ .subtitle | markdownify }}</p>
         </div>
       </div>
     </div>
@@ -102,23 +115,29 @@
     </div>
     <div class="row">
       <div class="mx-auto mt-5">
-        <a href="/services/" class="btn btn-main" >View More</a>
+        {{ if .button }}
+					  <a href="{{ .buttonurl }}" class="btn btn-main" >{{ .buttontitle }}</a>
+          {{ end }}
       </div>
     </div>
   </div>
 </section>
+{{ end }}
+{{ end }}
 
 
 {{- partial "call-to-action.html" . -}}
 
+
+{{ if .Page.Params.testimonialSection.enable }}
+{{ with .Page.Params.testimonialSection }}
 <section class="testimonial">
   <div class="container">
     <div class="row">
       <div class="col-12">
         <div class="section-title text-center">
-          <h2>Fun Facts About Us</h2>
-          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, <br> there live the
-            blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+          <h2>{{ .title | markdownify }}</h2>
+          <p>{{ .subtitle | markdownify }}</p>
         </div>
       </div>
     </div>
@@ -168,5 +187,7 @@
     </div>
   </div>
 </section>
+{{ end }}
+{{ end }}
 
 {{ end }}
