@@ -25,20 +25,20 @@ aboutSection:
 heroSectionSwo:
   enable: true
   image: /images/hero3.jpg
-  title: testout
-  button: true
-  buttontitle: sdfsdfsdf
-  buttonurl: link
-  body: sdfsdfsdfsdgdvfdsdf
+  title: ""
+  button: false
+  buttontitle: ""
+  buttonurl: ""
+  body: test
 serviceSection:
   enable: true
   button: true
   buttontitle: View More
   buttonurl: /services/
   title: Our Services
-  subtitle: testout
+  subtitle: ""
 testimonialSection:
   enable: true
-  title: Testimonials
-  subtitle: testout
+  title: What Our Clients are Saying
+  subtitle: ""
 ---
