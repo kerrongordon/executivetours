@@ -15,5 +15,5 @@ collections:
       - { label: 'Title', name: 'title', widget: 'string', required: true }
       - {label: "Layout", name: "layout", widget: "hidden", default: "services"}
       - { label: 'Image', name: 'image', widget: 'image', required: true }
-      - { label: 'Services', name: 'services', widget: 'list' }
+      - { label: 'Services', name: 'services', widget: 'list', fields: [] }
       - { label: 'Body', name: 'body', widget: 'markdown', required: true }
