@@ -1,11 +1,12 @@
-<section class="page-title bg-2" style="background-image: url({{.image|absLangURL}})">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="block">
-            <h1>Our Services</h1>
-          </div>
+{{ $image := "images/hero.jpg" | absLangURL }}
+<section class="page-title bg-2" style="background-image: url({{$image}})">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h1>{{ . }}</h1>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>

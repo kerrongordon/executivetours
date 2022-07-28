@@ -1,20 +1,9 @@
 {{ define "main" }}
 
-
 {{ $pageTitle := .Page.Title }}
 {{ if site.Data.homepage.slider.enable }}
 {{ with site.Data.homepage.slider }}
-<section class="page-title bg-2" style="background-image: url({{.image|absLangURL}})">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="block">
-            <h1>{{ $pageTitle }}</h1>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+{{ partial "hero.html" $pageTitle }}
 {{ end }}
 {{ end }}
 

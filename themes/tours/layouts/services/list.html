@@ -1,20 +1,6 @@
 {{ define "main" }}
 
-{{ if site.Data.homepage.slider.enable }}
-{{ with site.Data.homepage.slider }}
-<section class="page-title bg-2" style="background-image: url({{.image|absLangURL}})">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="block">
-            <h1>Our Services</h1>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-{{ end }}
-{{ end }}
+{{- partial "hero.html" .Title -}}
 
 {{ .Resources.Get "image/battle-of-the-forts.jpg" }}
 <section class="service" id="services">
