@@ -1,11 +1,9 @@
 {{ define "main" }}
 
 {{ $pageTitle := .Page.Title }}
-{{ if site.Data.homepage.slider.enable }}
-{{ with site.Data.homepage.slider }}
-{{ partial "hero.html" $pageTitle }}
-{{ end }}
-{{ end }}
+
+{{- partial "hero.html" $pageTitle -}}
+
 
 
 

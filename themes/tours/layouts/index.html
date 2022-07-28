@@ -4,7 +4,7 @@
 {{ with .Page.Params.heroSection }}
 {{ with resources.Get .image }}
 {{/*  {{ with .Resize ("1200x webp") }}  */}}
-<section class="slider" style="background-image: url({{.RelPermalink}})">
+<section class="slider" style="background-image: url({{.RelPermalink|absLangURL}})">
 {{/*  {{ end }}  */}}
 {{ end }}
 	<div class="container">
@@ -61,7 +61,7 @@
 {{ with .Page.Params.heroSectionSwo }}
 {{ with resources.Get .image }}
 {{/*  {{ with .Resize ("1200x webp") }}  */}}
-<section class="feature bg-2 overly" style="background-image: url({{.RelPermalink}})">
+<section class="feature bg-2 overly" style="background-image: url({{.RelPermalink|absLangURL}})">
 {{/*  {{ end }}  */}}
 {{ end }}
   <div class="container">
@@ -99,11 +99,11 @@
     <div class="row">
       {{ range first 8 (where site.RegularPages "Type" "services") }}
       <div class="col-lg-3 col-md-4 col-sm-6">
-        <a href="{{ .RelPermalink }}">
+        <a href="{{ .RelPermalink | absLangURL}}">
         <div class="service-item">
           {{ with resources.Get .Params.image }}
             {{ with .Resize ("300x webp") }}
-              <img src="{{ .RelPermalink }}" alt="{{ .Title }}" class="card-img-top rounded">
+              <img src="{{ .RelPermalink | absLangURL}}" alt="{{ .Title }}" class="card-img-top rounded">
             {{ end }}
             {{ end }}
           <h4>{{ .Title }}</h4>
