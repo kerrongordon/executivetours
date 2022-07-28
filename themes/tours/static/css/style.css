@@ -696,11 +696,11 @@ header .navbar-default .navbar-nav li a:hover {
   transition: 0.3s;
 }
 .navigation .navbar .navbar-nav > li > a:hover, .navigation .navbar .navbar-nav > li > a:focus {
-  color: #000;
+  color: #000 !important;
   background: transparent;
 }
 .navigation .navbar .navbar-nav li.active > a {
-  text-decoration: underline;
+  border: solid 1px rgba(255, 255, 255, 0.4);
   color: #655E7A;
 }
 .navigation .navbar .dropdown-menu {
@@ -1141,7 +1141,7 @@ ul.dropdown-menu li {
   margin: 30px 0 30px;
 }
 .testimonial .testimonial-carousel {
-  border: 1px solid #dedede;
+  /* border: 1px solid #dedede; */
   padding: 24px;
 }
 .testimonial .testimonial-carousel i {
@@ -2675,6 +2675,9 @@ ul.dropdown-menu li {
     backdrop-filter: blur(25px);
     box-shadow: 0 0 4px 2px rgb(0 0 0 / 31%);
   }
+  .nav-scroll li.active > a {
+    border: solid 1px rgba(0, 0, 0, 0.4);
+  }
 
   .nav-ontop {
     position: fixed;
@@ -2684,6 +2687,7 @@ ul.dropdown-menu li {
     box-shadow: none;
     backdrop-filter: none;
   }
+
   .nav-ontop .nav-link {
     color: #fff !important;
   }
@@ -2692,3 +2696,4 @@ ul.dropdown-menu li {
     transition: all ease-in-out 0.3s;
   }
 }
+

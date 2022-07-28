@@ -5,7 +5,7 @@ subtitle = 'Come and Explore Grenada with Executive Tours'
 cta = '#'
 
 
-theme = 'Tours'
+theme = 'tours'
 
 logo = ''
 
@@ -28,29 +28,16 @@ logo = ''
     identifier = 'contact'
     name = 'Contact'
     URL = '/contact/'
-    weight = 4
-
-    [[menu.main]]
-    identifier = 'portfolio'
-    name = 'Portfolio'
-    URL = '#'
     weight = 3
 
-        [[menu.main]]
-        parent = 'portfolio'
-        name = 'Portfolio Filter'
-        URL = '#'
-        weight = 1
+    [[menu.footer]]
+    identifier = 'contact'
+    name = 'Contact Us'
+    URL = '/contact/'
+    weight = 1
 
-        [[menu.main]]
-        parent = 'portfolio'
-        name = 'Portfolio Single'
-        URL = '#'
-        weight = 2
-
-        [[menu.main]]
-        identifier = 'submenu'
-        parent = 'portfolio'
-        name = 'Portfolio testing'
-        URL = '#'
-        weight = 3
+    [[menu.footer]]
+    identifier = 'faq'
+    name = 'FAQ'
+    URL = '/faq/'
+    weight = 2

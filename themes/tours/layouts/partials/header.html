@@ -18,12 +18,12 @@
 
           <div class="collapse navbar-collapse ml-auto" id="navbarsExample09">
             <ul class="navbar-nav ml-auto">
-              {{ $current := . }} {{ range site.Menus.main }} {{ $active := or
-              ($current.IsMenuCurrent "nav" .) ($current.HasMenuCurrent "nav" .)
-              }} {{ $active = or $active (eq .Name $current.Title) }} {{ if
-              .HasChildren }}
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="{{ .URL | absURL }}" id="dropdown03" data-toggle="dropdown"
+              {{ range site.Menus.main }}
+              {{ $active := eq $.RelPermalink (.URL | relLangURL) }}
+              {{ $active = or $active (eq $.Section (lower .Name)) }}
+              {{ if .HasChildren }}
+              <li class="nav-item dropdown {{ if $active }}active{{ end }}">
+                <a class="nav-link dropdown-toggle" href="{{ .URL | absURL }}" href="{{ .URL | absURL }}" id="dropdown03" data-toggle="dropdown"
                   aria-haspopup="true" aria-expanded="false">{{ .Name }} <span class="ion-ios-arrow-down"></span></a>
                 <ul class="dropdown-menu" aria-labelledby="dropdown03">
                   {{ range .Children }}
@@ -34,8 +34,8 @@
                 </ul>
               </li>
               {{ else }}
-              <li class="nav-item">
-                <a class="nav-link {{ if $active }}active{{ end }}" href="{{ .URL | absURL }}">{{ .Name }}</a>
+              <li class="nav-item {{ if $active }}active{{ end }}">
+                <a class="nav-link" href="{{ .URL | absURL }}">{{ .Name }}</a>
               </li>
               {{ end }} {{ end }}
             </ul>
