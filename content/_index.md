@@ -6,7 +6,7 @@ heroSection:
   image: /images/hero.jpg
   button: true
   buttontitle: Book Now
-  buttonurl: https://demo.kgpord.com/
+  buttonurl: /comingsoon/
 aboutSection:
   enable: true
   title: ABOUT US!​
