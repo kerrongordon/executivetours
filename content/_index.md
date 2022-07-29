@@ -38,7 +38,7 @@ serviceSection:
   title: Our Services
   subtitle: ""
 testimonialSection:
-  enable: true
+  enable: false
   title: What Our Clients are Saying
   subtitle: ""
 ---
