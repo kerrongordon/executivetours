@@ -1,14 +1,14 @@
 {{ range (where site.RegularPages "Type" "testimonial") }}
 <div>
     <i class="ion-quote"></i>
-    <p>{{ .quote }}</p>
+    <p>{{ .Params.quote }}</p>
         <div class="user">
             {{ with resources.Get .Params.image }}
-            {{ with .Resize ("100x webp") }}
-              <img src="{{ .RelPermalink | absLangURL}}" alt="{{ .clientName }}">
+            {{ with .Resize ("100x100 webp") }}
+              <img src="{{ .RelPermalink | absLangURL}}" alt="{{ .Params.clientName }}">
             {{ end }}
             {{ end }}
-            <p><span>{{ .clientName }}</span> {{ .clientTitle }}</p>
+            <p><span>{{ .Params.clientName }}</span> {{ .Params.clientTitle }}</p>
         </div>
     </div>
 {{ end }}
