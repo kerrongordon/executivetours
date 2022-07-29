@@ -19,7 +19,20 @@ collections:
       - { label: 'Tour Highlights', name: 'services', widget: 'list', fields: [ {label: "Item", name: "item", widget: "string"}] }
       - { label: 'Body', name: 'body', widget: 'markdown', required: true }
       - {label: "Visible", name: "visible", widget: hidden, default: true}
-
+  - name: 'testimonial'
+    label: 'Testimonial'
+    folder: 'content/testimonial'
+    create: true
+    slug: '{{slug}}'
+    editor:
+      preview: false
+    filter: {field: "visible", value: true}
+    fields:
+      - { label: 'Quote', name: 'quote', widget: "string", required: true }
+      - { label: 'Client Name', name: 'clientName', widget: 'string', required: false }
+      - { label: 'Image', name: 'image', widget: 'image', required: false }
+      - { label: 'Client title', name: 'clientTitle', widget: 'string', required: false }
+      - {label: "Visible", name: "visible", widget: hidden, default: true}
   - name: 'pages'
     label: 'Pages'
     files:
