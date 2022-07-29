@@ -36,14 +36,3 @@ logo = ''
     URL = '/contact/'
     weight = 4
 
-    [[menu.footer]]
-    identifier = 'contact'
-    name = 'Contact Us'
-    URL = '/contact/'
-    weight = 1
-
-    [[menu.footer]]
-    identifier = 'faq'
-    name = 'FAQ'
-    URL = '/faq/'
-    weight = 2

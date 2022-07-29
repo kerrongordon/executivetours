@@ -3,9 +3,7 @@
 {{ if .Page.Params.heroSection.enable }}
 {{ with .Page.Params.heroSection }}
 {{ with resources.Get .image }}
-{{/*  {{ with .Resize ("1200x webp") }}  */}}
 <section class="slider" style="background-image: url({{.RelPermalink|absLangURL}})">
-{{/*  {{ end }}  */}}
 {{ end }}
 	<div class="container">
 		<div class="row">
@@ -13,8 +11,14 @@
 				<div class="block">
 					<h1 class="animated fadeInUp" style="font-family: 'DM Serif Display', sans-serif;">{{ .title | markdownify }}</h1>
 					<p class="animated fadeInUp" >{{ .subtitle | markdownify }}</p>
+          {{if .enableButton}}
+          {{ if site.Data.settings.callToAction.enable }}
+          {{ with site.Data.settings.callToAction }}
           {{ if .button }}
-					  <a href="{{ .buttonurl }}" class="btn btn-main animated fadeInUp" >{{ .buttontitle }}</a>
+          <a class="btn btn-main animated fadeInUp" href="{{ .buttonurl }}">{{ .buttontitle }}</a>
+          {{ end }}
+          {{ end }}
+          {{ end }}
           {{ end }}
 				</div>
 			</div>

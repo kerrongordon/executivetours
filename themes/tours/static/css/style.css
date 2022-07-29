@@ -2686,6 +2686,27 @@ ul.dropdown-menu li {
   .nav-ontop .nav-link {
     color: #fff !important;
   }
+  .nav-ontop .booknow-btn-nav {
+    display: none;
+  }
+
+  .nav-scroll .booknow-btn-nav {
+    display: block;
+  }
+
+  .booknow-btn-nav {
+    color: #fff !important;
+    border: 1px solid #655E7A;
+    background: #655E7A;
+    margin-left: 30px;
+    transition: all ease-in-out 0.3s;
+  }
+
+  .booknow-btn-nav:hover {
+    background: #353240 !important;
+    border: 1px solid #353240;
+    color: #fff !important;
+  }
 
   #navbarkgp {
     transition: all ease-in-out 0.3s;
