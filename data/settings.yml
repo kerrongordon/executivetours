@@ -7,7 +7,7 @@ callToAction:
   buttontitle: Book Now
   buttonurl: https://demo.kgpord.com/
   enableOrDisable:
-    homeEnable: true
-    serviceEnable: true
-    galleryEnable: true
-    contactEnable: true
+    homeEnable: false
+    serviceEnable: false
+    galleryEnable: false
+    contactEnable: false
