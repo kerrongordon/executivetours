@@ -1,10 +1,10 @@
 ---
+title: Tranquil Adventures
+layout: services
+image: /images/whatsapp-image-2022-07-28-at-9.08.48-pm.jpeg
 visible: true
-title: 'Tranquil Adventures'
 draft: false
-layout: 'services'
-image: 'images/tranquil-adventures.jpg'
-services:
+services: null
 ---
 
 Journey up through the natural rain forest reserves. Feel the cool mist on your face as you inhale the pure air. Feast your eyes on the lush vegetation, and the tall pine trees with endemic fern in between. Indulge in the music sung by the birds, and enjoy the beautiful site of the mona monkeys swinging from branch to branch.
