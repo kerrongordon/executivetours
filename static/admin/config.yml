@@ -33,6 +33,18 @@ collections:
       - { label: 'Image', name: 'image', widget: 'image', required: false }
       - { label: 'Client title', name: 'clientTitle', widget: 'string', required: false }
       - {label: "Visible", name: "visible", widget: hidden, default: true}
+  - name: 'gallery'
+    label: 'Gallery'
+    folder: 'content/gallery'
+    create: true
+    slug: '{{slug}}'
+    editor:
+      preview: false
+    filter: {field: "visible", value: true}
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string', required: false }
+      - { label: 'Image', name: 'image', widget: 'image', required: false }
+      - {label: "Visible", name: "visible", widget: hidden, default: true}
   - name: 'pages'
     label: 'Pages'
     files:

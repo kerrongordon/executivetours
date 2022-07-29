@@ -17,9 +17,13 @@
               <div class="col-lg-6">
                 {{ with resources.Get .Params.image }}
                 {{ with .Resize ("800x webp") }}
+                <a class="portfolio-popup" href="{{ .RelPermalink | absLangURL}}">
+                {{ with .Resize ("600x webp") }}
                   <img src="{{ .RelPermalink }}" class="img-fluid rounded">
                 {{ end }}
                 {{ end }}
+                {{ end }}
+                </a>
               </div>
           </div>
       </div>

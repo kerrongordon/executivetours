@@ -1,0 +1,29 @@
+{{ define "main" }}
+{{- partial "hero.html" .Title -}}
+
+<section class="service" id="services">
+  <div class="container">
+    <div class="row">
+      {{ range first 8 (where site.RegularPages "Type" "gallery") }}
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        {{ with resources.Get .Params.image }}
+        {{ with .Resize ("800x webp") }}
+        <a class="portfolio-popup" href="{{ .RelPermalink | absLangURL}}">
+        <div class="service-item">
+            {{ with .Resize ("300x webp") }}
+              <img src="{{ .RelPermalink | absLangURL}}" alt="{{ .Title }}" class="card-img-top rounded">
+            {{ end }}
+          {{/*  <h4>{{ .Title }}</h4>  */}}
+        </div>
+        {{ end }}
+        {{ end }}
+      </a>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+
+
+{{ end }}

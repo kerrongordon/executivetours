@@ -25,10 +25,16 @@ logo = ''
     weight = 2
 
     [[menu.main]]
+    identifier = 'gallery'
+    name = 'Gallery'
+    URL = '/gallery/'
+    weight = 3
+
+    [[menu.main]]
     identifier = 'contact'
     name = 'Contact'
     URL = '/contact/'
-    weight = 3
+    weight = 4
 
     [[menu.footer]]
     identifier = 'contact'
