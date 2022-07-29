@@ -26,6 +26,8 @@ collections:
       - file: 'content/_index.md'
         label: 'Home Page'
         name: 'home'
+        editor:
+          preview: false
         fields:
           - { label: 'Hero Section',
               name: 'heroSection',

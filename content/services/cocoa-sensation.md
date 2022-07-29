@@ -1,4 +1,5 @@
 ---
+visible: true
 title: 'Cocoa Sensation'
 draft: false
 layout: 'services'

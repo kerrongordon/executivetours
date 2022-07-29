@@ -1,4 +1,5 @@
 ---
+visible: true
 title: 'Temperature Check'
 draft: false
 layout: 'services'

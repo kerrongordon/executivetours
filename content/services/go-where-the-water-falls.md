@@ -1,4 +1,5 @@
 ---
+visible: true
 title: 'Go Where The Water Falls'
 draft: false
 layout: 'services'

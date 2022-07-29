@@ -1,4 +1,5 @@
 ---
+visible: true
 title: 'Spice It Up Tour'
 draft: false
 layout: 'services'

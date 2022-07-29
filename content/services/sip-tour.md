@@ -1,4 +1,5 @@
 ---
+visible: true
 title: 'Sip & Tour'
 draft: false
 layout: 'services'

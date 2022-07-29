@@ -1,4 +1,5 @@
 ---
+visible: true
 title: 'Party On Board!'
 draft: false
 layout: 'services'

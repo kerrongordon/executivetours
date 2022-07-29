@@ -1,4 +1,5 @@
 ---
+visible: true
 title: 'Take a Pic'
 draft: false
 layout: 'services'

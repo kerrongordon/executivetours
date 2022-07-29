@@ -1,4 +1,5 @@
 ---
+visible: true
 title: 'Rum Tale'
 draft: false
 layout: 'services'

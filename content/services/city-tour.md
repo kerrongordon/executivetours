@@ -1,4 +1,5 @@
 ---
+visible: true
 title: 'City Tour'
 draft: false
 layout: 'services'

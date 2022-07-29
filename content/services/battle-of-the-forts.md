@@ -1,4 +1,5 @@
 ---
+visible: true
 title: 'Battle of The Forts'
 draft: false
 layout: 'services'

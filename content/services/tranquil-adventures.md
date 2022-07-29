@@ -1,4 +1,5 @@
 ---
+visible: true
 title: 'Tranquil Adventures'
 draft: false
 layout: 'services'

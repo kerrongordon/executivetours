@@ -1,4 +1,5 @@
 ---
+visible: true
 title: 'Beach Rush'
 draft: false
 layout: 'services'
