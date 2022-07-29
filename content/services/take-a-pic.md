@@ -1,11 +1,10 @@
 ---
+title: Take a Pic
+layout: services
+image: /images/temperature-check.jpg
 visible: true
-title: 'Take a Pic'
 draft: false
-layout: 'services'
-image: 'images/take-a-pic.jpg'
-
-services:
+services: null
 ---
 
 Tired of the hustle and bustle of the city? Why not venture up to the north of the island to the boardwalk which extends into the tranquil waters of Levera Pond.
