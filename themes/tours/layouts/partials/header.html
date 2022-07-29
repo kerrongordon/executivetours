@@ -3,12 +3,8 @@
     <div class="row">
       <div class="col-lg-12">
         <nav class="navbar navbar-expand-lg p-0">
-          <a class="navbar-brand nav-link" href="index.html">
-            {{/*  {{ if .Site }}
-              <img src="images/logo.png" alt="Logo" />
-            {{ else }}  */}}
+          <a class="navbar-brand nav-link" href='{{ "" | absLangURL }}'>
             {{ .Site.Title }}
-            {{/*  {{ end }}  */}}
           </a>
 
           <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample09"
@@ -23,8 +19,9 @@
               {{ $active = or $active (eq $.Section (lower .Name)) }}
               {{ if .HasChildren }}
               <li class="nav-item dropdown {{ if $active }}active{{ end }}">
-                <a class="nav-link dropdown-toggle" href="{{ .URL | absURL }}" href="{{ .URL | absURL }}" id="dropdown03" data-toggle="dropdown"
-                  aria-haspopup="true" aria-expanded="false">{{ .Name }} <span class="ion-ios-arrow-down"></span></a>
+                <a class="nav-link dropdown-toggle" href="{{ .URL | absURL }}" href="{{ .URL | absURL }}"
+                  id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ .Name }} <span
+                    class="ion-ios-arrow-down"></span></a>
                 <ul class="dropdown-menu" aria-labelledby="dropdown03">
                   {{ range .Children }}
                   <li>

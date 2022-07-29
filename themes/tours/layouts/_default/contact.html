@@ -70,4 +70,7 @@
   </div>
   </div>
 </section>
+{{ if site.Data.settings.callToAction.enableOrDisable.contactEnable }}
+{{- partial "call-to-action.html" . -}}
+{{ end }}
 {{ end }}

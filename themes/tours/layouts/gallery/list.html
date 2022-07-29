@@ -4,7 +4,7 @@
 <section class="service" id="services">
   <div class="container">
     <div class="row">
-      {{ range first 8 (where site.RegularPages "Type" "gallery") }}
+      {{ range (where site.RegularPages "Type" "gallery") }}
       <div class="col-lg-3 col-md-4 col-sm-6">
         {{ with resources.Get .Params.image }}
         {{ with .Resize ("800x webp") }}
@@ -25,5 +25,7 @@
 </section>
 
 
-
+{{ if site.Data.settings.callToAction.enableOrDisable.galleryEnable }}
+{{- partial "call-to-action.html" . -}}
+{{ end }}
 {{ end }}

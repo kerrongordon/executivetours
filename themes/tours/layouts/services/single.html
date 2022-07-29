@@ -53,6 +53,8 @@
   </section>
   {{ end }}
 
+  {{ if site.Data.settings.callToAction.enableOrDisable.serviceEnable }}
   {{- partial "call-to-action.html" . -}}
+  {{ end }}
 
 {{ end }}

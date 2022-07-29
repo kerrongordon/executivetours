@@ -1,5 +1,5 @@
-{{ if site.Data.cta.cta.enable }}
-{{ with site.Data.cta.cta }}
+{{ if site.Data.settings.callToAction.enable }}
+{{ with site.Data.settings.callToAction }}
 <section class="call-to-action bg-1 section-sm overly" style="background-image: url({{.image|absLangURL}})">
     <div class="container">
         <div class="row">
@@ -7,10 +7,8 @@
                 <div class="block">
                     <h2 class="mb-3">{{ .title | markdownify }}</h2>
                     <p>{{ .subtitle | markdownify }}</p>
-                    {{ if .button.enable }}
-                    {{ with .button }}
-                    <a class="btn btn-main btn-solid-border" href="{{ .link }}">{{ .label }}</a>
-                    {{ end }}
+                    {{ if .button }}
+                    <a class="btn btn-main btn-solid-border" href="{{ .buttonurl }}">{{ .buttontitle }}</a>
                     {{ end }}
                 </div>
             </div>

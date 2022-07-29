@@ -1,6 +1,7 @@
 backend:
   name: git-gateway
   branch: main # Branch to update (optional; defaults to master)
+local_backend: true
 media_folder: assets/images
 public_folder: /images
 collections:
@@ -140,3 +141,36 @@ collections:
           - { label: 'Facebook', name: 'facebook', widget: 'string', required: false }
           - { label: 'Instagram', name: 'instagram', widget: 'string', required: false }
           - { label: 'Twitter', name: 'twitter', widget: 'string', required: false }
+      - file: 'data/settings.yml'
+        label: 'Settings Page'
+        name: 'settings'
+        editor:
+          preview: false
+        fields:
+          - {
+              label: 'Call To Action',
+              name: 'callToAction',
+              widget: 'object',
+              fields:
+                [
+                  { label: 'Enable', name: 'enable', widget: 'boolean' },
+                  { label: 'Title', name: 'title', widget: 'string', required: true },
+                  { label: 'Subtitle', name: 'subtitle', widget: 'string', required: false },
+                  { label: 'Image', name: 'image', widget: 'image' },
+                  { label: 'Enable Button', name: 'button', widget: 'boolean' },
+                  { label: 'Button Title', name: 'buttontitle', widget: 'string', required: false },
+                  { label: 'Button Url', name: 'buttonurl', widget: 'string' },
+                  {
+                    label: 'Enable / Disable on Pages',
+                    name: 'enableOrDisable',
+                    widget: 'object',
+                    fields:
+                      [
+                        { label: 'Home Page', name: 'homeEnable', widget: 'boolean' },
+                        { label: 'Service Page', name: 'serviceEnable', widget: 'boolean' },
+                        { label: 'Gallery Page', name: 'galleryEnable', widget: 'boolean' },
+                        { label: 'Contact Page', name: 'contactEnable', widget: 'boolean' },
+                      ]
+                  }
+                ]
+            }

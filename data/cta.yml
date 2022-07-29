@@ -1,9 +1,0 @@
-cta:
-  enable: true
-  title: 'Executive Tours'
-  subtitle: 'Come and Explore Grenada with Executive Tours'
-  image: 'images/hero2.jpg'
-  button:
-    enable: true
-    label: 'Book Now'
-    link: '#'

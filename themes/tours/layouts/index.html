@@ -125,8 +125,9 @@
 {{ end }}
 {{ end }}
 
-
+{{ if site.Data.settings.callToAction.enableOrDisable.homeEnable }}
 {{- partial "call-to-action.html" . -}}
+{{ end }}
 
 
 {{ if .Page.Params.testimonialSection.enable }}
