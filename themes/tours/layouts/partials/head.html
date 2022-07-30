@@ -21,27 +21,31 @@
     <link rel="icon" type="image/png" sizes="32x32" href='{{ "favicon/favicon-32x32.png" | absLangURL }}'>
     <link rel="icon" type="image/png" sizes="16x16" href='{{ "favicon/favicon-16x16.png" | absLangURL }}'>
     <link rel="manifest" href='{{ "favicon/site.webmanifest" | absLangURL }}'>
-    <link rel="mask-icon" href='{ "favicon/safari-pinned-tab.svg" | absLangURL }}' color="#5bbad5">
+    <link rel="mask-icon" href='{{ "favicon/safari-pinned-tab.svg" | absLangURL }}' color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
-    <!-- bootstrap.min css -->
+     <!-- bootstrap.min css -->
     <link rel="stylesheet" href='{{ "plugins/bootstrap/bootstrap.min.css" | absLangURL }}'>
     <!-- Ionic Icon Css -->
     <link rel="stylesheet" href='{{ "plugins/Ionicons/css/ionicons.min.css" | absLangURL }}'>
     <!-- animate.css -->
-    <link rel="stylesheet" href='{{ "plugins/animate-css/animate.css" | absLangURL }}'>
+    {{ $pluginsanimate := resources.Get "plugins/animate-css/animate.css" | resources.Fingerprint "sha512" | minify }}
+    <link rel="stylesheet" href='{{ $pluginsanimate.RelPermalink | absLangURL }}'>
     <!-- Magnify Popup -->
-    <link rel="stylesheet" href='{{ "plugins/magnific-popup/magnific-popup.css" | absLangURL }}'>
+    {{ $pluginspop := resources.Get "plugins/magnific-popup/magnific-popup.css" | resources.Fingerprint "sha512" | minify }}
+    <link rel="stylesheet" href='{{ $pluginspop.RelPermalink | absLangURL }}'>
     <!-- Slick CSS -->
-    <link rel="stylesheet" href='{{ "plugins/slick/slick.css" | absLangURL }}'>
+    {{ $pluginsslick := resources.Get "plugins/slick/slick.css" | resources.Fingerprint "sha512" | minify }}
+    <link rel="stylesheet" href='{{ $pluginsslick.RelPermalink | absLangURL }}'>
 
     {{ if site.Data.homepage.slider.enable }}
-    <link href="http://fonts.cdnfonts.com/css/dm-serif-display" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/dm-serif-display" rel="stylesheet">
     {{ end }}
 
     <!-- Main Stylesheet -->
-    <link rel="stylesheet" href='{{ "css/style.css" | absLangURL }}'>
+    {{ $css := resources.Get "css/style.css" | resources.Fingerprint "sha512" | minify }}
+    <link rel="stylesheet" href='{{ $css.RelPermalink | absLangURL }}'>
 
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 

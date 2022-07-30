@@ -22,7 +22,7 @@
 	<span class="icon ion-ios-arrow-up"></span>
 </div>
 
-    <!-- 
+    <!--
     Essential Scripts
     =====================================-->
 
@@ -37,11 +37,9 @@
     <!-- filter -->
     <script src='{{ "plugins/shuffle/shuffle.min.js" | absLangURL }}'></script>
     <script src='{{ "plugins/SyoTimer/jquery.syotimer.min.js" | absLangURL }}'></script>
-    <!-- Google Map -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"></script>
-    <script src='{{ "plugins/google-map/map.js" | absLangURL }}'></script>
 
-    <script src='{{ "js/script.js" | absLangURL }}'></script>
+    {{ $script := resources.Get "js/script.js" | resources.Fingerprint "sha512" | minify }}
+    <script src='{{ $script.RelPermalink | absLangURL }}'></script>
 
     <script>
         if (window.netlifyIdentity) {
