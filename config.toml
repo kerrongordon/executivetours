@@ -6,8 +6,7 @@ cta = '#'
 
 
 theme = 'tours'
-
-logo = ''
+enableRobotsTXT = true
 
 
 [menu]
@@ -36,3 +35,7 @@ logo = ''
     URL = '/contact/'
     weight = 4
 
+[sitemap]
+  changefreq = 'monthly'
+  filename = 'sitemap.xml'
+  priority = 0.5
