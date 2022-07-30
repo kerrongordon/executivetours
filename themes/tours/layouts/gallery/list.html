@@ -1,28 +1,90 @@
 {{ define "main" }}
 {{- partial "hero.html" .Title -}}
 
+{{ $paginator := .Paginate (where site.RegularPages "Type" "gallery") }}
 <section class="service" id="services">
   <div class="container">
     <div class="row">
-      {{ range (where site.RegularPages "Type" "gallery") }}
+      {{ range $paginator.Pages }}
       <div class="col-lg-3 col-md-4 col-sm-6">
         {{ with resources.Get .Params.image }}
         {{ with .Resize ("800x webp") }}
         <a class="portfolio-popup" href="{{ .RelPermalink | absLangURL}}">
-        <div class="service-item">
+          <div class="service-item">
             {{ with .Resize ("300x webp") }}
-              <img src="{{ .RelPermalink | absLangURL}}" alt="{{ .Title }}" class="card-img-top rounded">
+            <img src="{{ .RelPermalink | absLangURL}}" alt="{{ .Title }}" class="card-img-top rounded">
             {{ end }}
-          {{/*  <h4>{{ .Title }}</h4>  */}}
-        </div>
-        {{ end }}
-        {{ end }}
-      </a>
+            {{/* <h4>{{ .Title }}</h4> */}}
+          </div>
+          {{ end }}
+          {{ end }}
+        </a>
       </div>
       {{ end }}
     </div>
+    <nav aria-label="Page navigation example">
+      {{ $paginator := .Paginator }}
+
+      <!-- If there's more than one page. -->
+      {{ if gt $paginator.TotalPages 1 }}
+
+      <ul class="pagination post-pagination justify-content-center">
+
+        <!-- First page. -->
+        {{ if ne $paginator.PageNumber 1 }}
+        <li class="page-item">
+          <a class="page-link" href="{{ $paginator.First.URL }}">
+            ««
+          </a>
+        </li>
+        {{ end }}
+
+        <!-- Previous page. -->
+        {{ if $paginator.HasPrev }}
+        <li class="page-item">
+          <a href="{{ $paginator.Prev.URL }}" class="page-link">
+            Prev
+          </a>
+        </li>
+        {{ end }}
+
+        <!-- Page numbers. -->
+        {{ range $paginator.Pagers }}
+        <li class="pagination__item{{ if eq . $paginator }} active{{ end }}">
+          <a href="{{ .URL }}" class="page-link" {{ if eq . $paginator }} style="color: #fff;" {{ end }}>
+            {{ .PageNumber }}
+          </a>
+        </li>
+        {{ end }}
+
+        <!-- Next page. -->
+        {{ if $paginator.HasNext }}
+        <li class="pagination__item pagination__item--next">
+          <a href="{{ $paginator.Next.URL }}" class="page-link">
+            Next
+          </a>
+        </li>
+        {{ end }}
+
+        <!-- Last page. -->
+        {{ if ne $paginator.PageNumber $paginator.TotalPages }}
+        <li class="pagination__item pagination__item--last">
+          <a class="page-link" href="{{ $paginator.Last.URL }}">
+            »»
+          </a>
+        </li>
+        {{ end }}
+
+      </ul><!-- .pagination -->
+      {{ end }}
+
+    </nav>
   </div>
 </section>
+
+{{/* {{ end }} */}}
+
+
 
 
 {{ if site.Data.settings.callToAction.enableOrDisable.galleryEnable }}

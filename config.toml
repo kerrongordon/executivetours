@@ -7,7 +7,7 @@ cta = '#'
 
 theme = 'tours'
 enableRobotsTXT = true
-
+paginate = 10
 
 [menu]
 

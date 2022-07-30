@@ -30,6 +30,7 @@ collections:
     filter: {field: "visible", value: true}
     fields:
       - { label: 'Client Name', name: 'clientName', widget: 'string', required: false }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: 'Quote', name: 'quote', widget: "string", required: false }
       - { label: 'Image', name: 'image', widget: 'image', required: false }
       - { label: 'Client title', name: 'clientTitle', widget: 'string', required: false }
