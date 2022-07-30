@@ -1,5 +1,13 @@
-{{ $image := "images/hero.jpg" | absLangURL }}
-<section class="page-title bg-2" style="background-image: url({{$image}})">
+{{/*  {{ $image := "images/hero.jpg" | absLangURL }}  */}}
+{{ with site.GetPage "content/_index.md" }}
+{{ with .Page.Params.heroSection }}
+{{ with resources.Get .image }}
+{{/*  {{ with .Resize ("1920x jpg") }}  */}}
+<section class="page-title bg-2" style="background-image: url({{.RelPermalink|absLangURL}})">
+  {{/*  {{ end }}  */}}
+  {{ end }}
+  {{ end }}
+  {{ end }}
   <div class="container">
     <div class="row">
       <div class="col-md-12">

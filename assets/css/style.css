@@ -2085,6 +2085,7 @@ ul.dropdown-menu li {
 .bg-1 {
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .bg-2 {

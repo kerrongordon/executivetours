@@ -3,7 +3,9 @@
 {{ if .Page.Params.heroSection.enable }}
 {{ with .Page.Params.heroSection }}
 {{ with resources.Get .image }}
+{{/*  {{ with .Resize ("1920x jpg") }}  */}}
 <section class="slider" style="background-image: url({{.RelPermalink|absLangURL}})">
+{{/*  {{ end }}  */}}
 {{ end }}
 	<div class="container">
 		<div class="row">

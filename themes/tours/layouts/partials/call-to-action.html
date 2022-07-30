@@ -1,6 +1,10 @@
 {{ if site.Data.settings.callToAction.enable }}
 {{ with site.Data.settings.callToAction }}
-<section class="call-to-action bg-1 section-sm overly" style="background-image: url({{.image|absLangURL}})">
+{{ with resources.Get .image }}
+{{ with .Resize ("1200x webp") }}
+<section class="call-to-action bg-1 section-sm overly" style="background-image: url({{.RelPermalink|absLangURL}})">
+{{ end }}
+{{ end }}
     <div class="container">
         <div class="row">
             <div class="col-md-12">
