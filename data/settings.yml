@@ -5,9 +5,9 @@ callToAction:
   image: /images/hero2.jpg
   button: true
   buttontitle: Book Now
-  buttonurl: https://demo.kgpord.com/
+  buttonurl: /coming-soon/
   enableOrDisable:
     homeEnable: true
     serviceEnable: true
     galleryEnable: false
-    contactEnable: false
+    contactEnable: true
