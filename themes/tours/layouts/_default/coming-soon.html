@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+{{- partial "head.html" . -}}
+
+<body id="body">
+    {{ with site.GetPage "content/_index.md" }}
+    {{ with .Page.Params.heroSection }}
+    {{ with resources.Get .image }}
+    <section class="coming-soon text-center overly" style="background-image: url({{.RelPermalink|absLangURL}})">
+        {{ end }}
+        {{ end }}
+        {{ end }}
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="block">
+                        <h1>{{ .Page.Params.title }}</h1>
+                        <p>{{ .Page.Params.subtitle }}</p>
+                        <div class="count-down"></div>
+                        <div class="social-media-icons mt-20">
+                            {{ with site.GetPage "content/contact/_index.md" }}
+                            {{ with .Page.Params }}
+                            <ul>
+                                {{ if .instagram }}
+                                <li>
+                                    <a href="{{ .instagram }}" target="_blank"><i
+                                            class="ion-social-instagram-outline"></i></a>
+                                </li>
+                                {{ end }}
+                                {{ if .twitter }}
+                                <li>
+                                    <a href="{{ .twitter }}" target="_blank"><i
+                                            class="ion-social-twitter-outline"></i></a>
+                                </li>
+                                {{ end }}
+                                {{ if .facebook }}
+                                <li>
+                                    <a href="{{ .facebook }}" target="_blank"><i
+                                            class="ion-social-facebook-outline"></i></a>
+                                </li>
+                                {{ end }}
+                            </ul>
+                            {{ end }}
+                            {{ end }}
+                        </div>
+                        <p class="copyright mb-0">Copyright
+                            <script>document.write(new Date().getFullYear())</script> &copy; by <a
+                                href='{{ "" | absURL }}'>{{ .Site.Title }}</a>. All rights reserved.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+
+</html>
