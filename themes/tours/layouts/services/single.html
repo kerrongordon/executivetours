@@ -13,6 +13,9 @@
               <div class="col-lg-6">
                   <h2>{{ .Title }}</h2>
                   <p class="mt-30">{{ .Content }}</p>
+                  {{ if .Params.bookingUrl }}
+                  <a class="btn btn-main animated fadeInUp" href="{{ .bookingUrl }}">Book Now</a>
+                  {{ end }}
               </div>
               <div class="col-lg-6">
                 {{ with resources.Get .Params.image }}
