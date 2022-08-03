@@ -1,15 +1,15 @@
 ---
+title: Battle of The Forts
+layout: services
+image: images/battle-of-the-forts.jpg
+bookingUrl: https://booking.setmore.com/scheduleappointment/94fa39d9-3139-41a9-b47e-20d34c9be61f/services/0a2488fd-3845-4cd8-b1e1-9dc2c9119a2b
 visible: true
-title: 'Battle of The Forts'
 draft: false
-layout: 'services'
-image: 'images/battle-of-the-forts.jpg'
-
 services:
-    - item: 'River Antoine Rum Distillery'
-    - item: 'Westerhall Rum Distillery'
-    - item: 'Clarke’s Court Rum Distillery'
-    - item: 'Bar Hopping'
+  - item: River Antoine Rum Distillery
+  - item: Westerhall Rum Distillery
+  - item: Clarke’s Court Rum Distillery
+  - item: Bar Hopping
 ---
 
 Breathe in Grenada’s rich history as you stroll through these antique stone fortifications, which hosts astonishing bird’s eye views of the Harbour, the town of St. George, Grand Anse Beach, Point Saline, and so much more.
