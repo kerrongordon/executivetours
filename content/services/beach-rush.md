@@ -1,15 +1,15 @@
 ---
+title: Beach Rush
+layout: services
+image: images/beach-rush.jpg
+bookingUrl: https://booking.setmore.com/scheduleappointment/94fa39d9-3139-41a9-b47e-20d34c9be61f/services/6a1aaa23-464e-4131-b93f-d1c2e8b89cb8
 visible: true
-title: 'Beach Rush'
 draft: false
-layout: 'services'
-image: 'images/beach-rush.jpg'
-
 services:
-    - item: 'Bath Way Beach'
-    - item: 'Black Bay Beach'
-    - item: 'Levera Beach'
-    - item: 'BBC Beach'
+  - item: Bath Way Beach
+  - item: Black Bay Beach
+  - item: Levera Beach
+  - item: BBC Beach
 ---
 
 Get-A- Way for the day as we escape to some of Grenada’s most exotic beaches. Imagine the cool Caribbean Sea breeze hugging your face, while the fine refreshing sand kisses your feet.
