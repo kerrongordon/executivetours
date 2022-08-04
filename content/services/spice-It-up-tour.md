@@ -1,14 +1,14 @@
 ---
+title: Spice It Up Tour
+layout: services
+image: images/spice-It-up-tour.jpg
+bookingUrl: https://booking.setmore.com/scheduleappointment/94fa39d9-3139-41a9-b47e-20d34c9be61f/services/4b0333d9-6340-42df-8341-b4b78833c547?source=settings
 visible: true
-title: 'Spice It Up Tour'
 draft: false
-layout: 'services'
-image: 'images/spice-It-up-tour.jpg'
-
 services:
-    - item: 'The Laura Herb & Spice Gardens'
-    - item: 'The De La Grenade Factory'
-    - item: 'The Spice Market'
+  - item: The Laura Herb & Spice Gardens
+  - item: The De La Grenade Factory
+  - item: The Spice Market
 ---
 
 Before rebranded as Pure Grenada, this tropical island was formerly known as ‘The Island of Spice.’ Grenada is widely known for its rich spices enjoyed worldwide.
