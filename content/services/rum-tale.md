@@ -1,15 +1,15 @@
 ---
+title: Rum Tale
+layout: services
+image: images/rum-tale.jpg
+bookingUrl: https://booking.setmore.com/scheduleappointment/94fa39d9-3139-41a9-b47e-20d34c9be61f/services/b5b3a5a4-614c-4eba-8b1b-223f070f6d68?source=settings
 visible: true
-title: 'Rum Tale'
 draft: false
-layout: 'services'
-image: 'images/rum-tale.jpg'
-
 services:
-    - item: 'River Antoine Rum Distillery'
-    - item: 'Westerhall Rum Distillery'
-    - item: 'Clarke’s Court Rum Distillery'
-    - item: 'Bar Hopping'
+  - item: River Antoine Rum Distillery
+  - item: Westerhall Rum Distillery
+  - item: Clarke’s Court Rum Distillery
+  - item: Bar Hopping
 ---
 
 Entice your taste buds as you explore the wonders of the Flavours of Grenada’s Locally produced Rums. Journeying to the North of the island to River Antoine Rum Distillery, here you will experience up close and personal, the only authentic fully functional water driven mill on the island.
