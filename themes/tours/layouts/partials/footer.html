@@ -1,57 +1,68 @@
 <footer class="footer">
-	<div class="container">
+  <div class="container">
     <div class="text-center mb-4">
       <img src='{{ "images/logo.png" | absLangURL }}' alt="Logo">
     </div>
-		<div class="row">
-			<div class="col-md-12">
-				<div class="footer-manu">
-					<ul>
-						{{ range site.Menus.main }}
-							<li><a href="{{ .URL | absURL }}">{{ .Name }}</a></li>
-						{{ end }}
-					</ul>
-				</div>
-				<p class="copyright mb-0">Copyright <script>document.write(new Date().getFullYear())</script> &copy; by <a
-						href='{{ "" | absURL }}'>{{ .Site.Title }}</a>. All rights reserved.
-				</p>
-			</div>
-		</div>
-	</div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="footer-manu">
+          <ul>
+            {{ range site.Menus.main }}
+            <li><a href="{{ .URL | absURL }}">{{ .Name }}</a></li>
+            {{ end }}
+          </ul>
+        </div>
+        <p class="copyright mb-0">Copyright
+          <script>document.write(new Date().getFullYear())</script> &copy; by <a href='{{ "" | absURL }}'>{{ .Site.Title
+            }}</a>. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </div>
 </footer>
 
 
 <div id="scroll-to-top" class="scroll-to-top">
-	<span class="icon ion-ios-arrow-up"></span>
+  <span class="icon ion-ios-arrow-up"></span>
 </div>
 
-    <!--
+<!--
     Essential Scripts
     =====================================-->
 
 
-    <!-- Main jQuery -->
-    <script src='{{ "plugins/jquery/jquery.min.js" | absLangURL }}'></script>
-    <!-- Bootstrap 3.1 -->
-    <script src='{{ "plugins/bootstrap/bootstrap.min.js" | absLangURL }}'></script>
-    <!-- slick Carousel -->
-    <script src='{{ "plugins/slick/slick.min.js" | absLangURL }}'></script>
-    <script src='{{ "plugins/magnific-popup/jquery.magnific-popup.min.js" | absLangURL }}'></script>
-    <!-- filter -->
-    <script src='{{ "plugins/shuffle/shuffle.min.js" | absLangURL }}'></script>
-    <script src='{{ "plugins/SyoTimer/jquery.syotimer.min.js" | absLangURL }}'></script>
+<!-- Main jQuery -->
+<script src='{{ "plugins/jquery/jquery.min.js" | absLangURL }}'></script>
+<!-- Bootstrap 3.1 -->
+<script src='{{ "plugins/bootstrap/bootstrap.min.js" | absLangURL }}'></script>
+<!-- slick Carousel -->
+<script src='{{ "plugins/slick/slick.min.js" | absLangURL }}'></script>
+<script src='{{ "plugins/magnific-popup/jquery.magnific-popup.min.js" | absLangURL }}'></script>
+<!-- filter -->
+<script src='{{ "plugins/shuffle/shuffle.min.js" | absLangURL }}'></script>
+<script src='{{ "plugins/SyoTimer/jquery.syotimer.min.js" | absLangURL }}'></script>
 
-    {{ $script := resources.Get "js/script.js" | resources.Fingerprint "sha512" | minify }}
-    <script src='{{ $script.RelPermalink | absLangURL }}'></script>
+{{ $script := resources.Get "js/script.js" | resources.Fingerprint "sha512" | minify }}
+<script src='{{ $script.RelPermalink | absLangURL }}'></script>
 
-    <script>
-        if (window.netlifyIdentity) {
-          window.netlifyIdentity.on("init", user => {
-            if (!user) {
-              window.netlifyIdentity.on("login", () => {
-                document.location.href = "/admin/";
-              });
-            }
-          });
-        }
-      </script>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T7SZ94R5ZQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', 'G-T7SZ94R5ZQ');
+</script>

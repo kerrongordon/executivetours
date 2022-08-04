@@ -5,7 +5,7 @@ callToAction:
   image: /images/hero2.jpg
   button: true
   buttontitle: Book Now
-  buttonurl: https://executivetours.setmore.com/
+  buttonurl: https://booking.setmore.com/scheduleappointment/94fa39d9-3139-41a9-b47e-20d34c9be61f
   enableOrDisable:
     homeEnable: true
     serviceEnable: true

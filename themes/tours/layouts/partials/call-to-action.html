@@ -14,9 +14,9 @@
                     <p>{{ .subtitle | markdownify }}</p>
                     {{ if .button }}
                     {{ if $bookingurl }}
-                    <a class="btn btn-main btn-solid-border" href="{{ $bookingurl }}">{{ .buttontitle }}</a>
+                    <a id="Setmore_button_iframe" class="btn btn-main btn-solid-border" href="{{ $bookingurl }}">{{ .buttontitle }}</a>
                     {{ else }}
-                    <a class="btn btn-main btn-solid-border" href="{{ .buttonurl }}">{{ .buttontitle }}</a>
+                    <a id="Setmore_button_iframe" class="btn btn-main btn-solid-border" href="{{ .buttonurl }}">{{ .buttontitle }}</a>
                     {{ end }}
                     {{ end }}
                 </div>
