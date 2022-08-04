@@ -1,3 +1,4 @@
+{{ $bookingurl := .Page.Params.bookingurl }}
 {{ if site.Data.settings.callToAction.enable }}
 {{ with site.Data.settings.callToAction }}
 {{ with resources.Get .image }}
@@ -12,7 +13,11 @@
                     <h2 class="mb-3">{{ .title | markdownify }}</h2>
                     <p>{{ .subtitle | markdownify }}</p>
                     {{ if .button }}
+                    {{ if $bookingurl }}
+                    <a class="btn btn-main btn-solid-border" href="{{ $bookingurl }}">{{ .buttontitle }}</a>
+                    {{ else }}
                     <a class="btn btn-main btn-solid-border" href="{{ .buttonurl }}">{{ .buttontitle }}</a>
+                    {{ end }}
                     {{ end }}
                 </div>
             </div>

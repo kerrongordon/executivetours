@@ -3,9 +3,9 @@
 {{ if .Page.Params.heroSection.enable }}
 {{ with .Page.Params.heroSection }}
 {{ with resources.Get .image }}
-{{/*  {{ with .Resize ("1920x jpg") }}  */}}
+{{ with .Resize ("1920x jpg") }}
 <section class="slider" style="background-image: url({{.RelPermalink|absLangURL}})">
-{{/*  {{ end }}  */}}
+{{ end }}
 {{ end }}
 	<div class="container">
 		<div class="row">
@@ -66,9 +66,9 @@
 {{ if .Page.Params.heroSectionSwo.enable }}
 {{ with .Page.Params.heroSectionSwo }}
 {{ with resources.Get .image }}
-{{/*  {{ with .Resize ("1200x webp") }}  */}}
+{{ with .Resize ("1200x webp") }}
 <section class="feature bg-2 overly" style="background-image: url({{.RelPermalink|absLangURL}})">
-{{/*  {{ end }}  */}}
+{{ end }}
 {{ end }}
   <div class="container">
     <div class="row justify-content-end">
