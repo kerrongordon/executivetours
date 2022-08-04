@@ -8,6 +8,7 @@ services:
   - item: Seven Sister’s Falls
   - item: Adelphi Waterfall
   - item: Clabony Sulphur Hot Spring
+bookingUrl: https://booking.setmore.com/scheduleappointment/94fa39d9-3139-41a9-b47e-20d34c9be61f/services/b38f2b9c-899b-4996-937b-51c6c7b4996b?source=settings
 ---
 
 Are you a lover of nature? Do you enjoy a good harsh or hike? Then we got just the right combination for you. Located in the middle of the rainforest reserves, sits one of the wonders of the islands, the seven sister’s waterfall.
