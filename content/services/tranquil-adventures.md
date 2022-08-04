@@ -5,6 +5,7 @@ image: /images/whatsapp-image-2022-07-28-at-9.08.48-pm.jpeg
 visible: true
 draft: false
 services: null
+bookingUrl: https://booking.setmore.com/scheduleappointment/94fa39d9-3139-41a9-b47e-20d34c9be61f/services/7362d41b-604a-4c84-a85e-70da231a54d1?source=settings
 ---
 
 Journey up through the natural rain forest reserves. Feel the cool mist on your face as you inhale the pure air. Feast your eyes on the lush vegetation, and the tall pine trees with endemic fern in between. Indulge in the music sung by the birds, and enjoy the beautiful site of the mona monkeys swinging from branch to branch.
