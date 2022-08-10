@@ -17,3 +17,4 @@ themes/tours/static/.DS_Store
 
 #nodejs
 node_modules
+package-lock.json
