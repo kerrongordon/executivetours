@@ -85,7 +85,8 @@
     "yargs-parser": "^21.1.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "hugo serve",
+    "build": "hugo --gc --minify --environment=production"
   },
   "repository": {
     "type": "git",
