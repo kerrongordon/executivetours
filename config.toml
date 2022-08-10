@@ -4,7 +4,6 @@ title = 'Executive Tours'
 subtitle = 'Come and Explore Grenada with Executive Tours'
 cta = '#'
 
-
 theme = 'tours'
 enableRobotsTXT = true
 paginate = 12
@@ -39,3 +38,6 @@ paginate = 12
   changefreq = 'monthly'
   filename = 'sitemap.xml'
   priority = 0.5
+
+[build]
+  writeStats = true
