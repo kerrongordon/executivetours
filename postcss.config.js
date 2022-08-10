@@ -8,7 +8,9 @@ const purgecss = require('@fullhuman/postcss-purgecss')({
         ...(els.ids || []),
       ];
     },
-    safelist: []
+    safelist: [
+      'collapsed'
+    ]
   });
   module.exports = {
     plugins: [
