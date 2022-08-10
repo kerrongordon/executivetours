@@ -7,6 +7,7 @@
     <meta name="geo.placename" content="St George" />
     <meta name="geo.position" content="12.048844;-61.744619" />
     <meta name="ICBM" content="12.048844, -61.744619" />
+    {{/*  <meta http-equiv="Content-Security-Policy" content="script-src 'none'">  */}}
 
     <meta property="og:title" content="{{ .Page.Title }}{{if .Page.Title }} | {{ end }}{{ .Site.Title }}" />
     <meta property="og:type" content="Bookings" />
@@ -23,9 +24,11 @@
     <meta name=”twitter:image” content='{{ .Page.Params.heroSection.image }}'>
 
     <link rel="apple-touch-icon" sizes="180x180" href='{{"favicon/apple-touch-icon.png"|absLangURL}}'>
+    <link rel="icon" type="image/png" sizes="512x512" href='{{"favicon/android-chrome-512x512.png"|absLangURL}}'>
+    <link rel="icon" type="image/png" sizes="192x192" href='{{"favicon/android-chrome-192x192.png"|absLangURL}}'>
     <link rel="icon" type="image/png" sizes="32x32" href='{{"favicon/favicon-32x32.png"|absLangURL}}'>
     <link rel="icon" type="image/png" sizes="16x16" href='{{"favicon/favicon-16x16.png"|absLangURL}}'>
-    <link rel="manifest" href='{{"favicon/site.webmanifest"|absLangURL}}'>
+    <link rel="manifest" href='{{"manifest.webmanifest"|absLangURL}}'>
     <link rel="mask-icon" href='{{"favicon/safari-pinned-tab.svg"|absLangURL}}' color="#5bbad5">
     <meta name="msapplication-TileColor" content="#603cba">
     <meta name="theme-color" content="#ffffff">

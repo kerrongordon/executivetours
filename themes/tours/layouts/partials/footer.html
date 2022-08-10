@@ -32,18 +32,18 @@
 
 
 <!-- Main jQuery -->
-<script src='{{ "plugins/jquery/jquery.min.js" | absLangURL }}'></script>
+<script src='{{ "plugins/jquery/jquery.min.js" | absLangURL }}' defer></script>
 <!-- Bootstrap 3.1 -->
-<script src='{{ "plugins/bootstrap/bootstrap.min.js" | absLangURL }}'></script>
+<script src='{{ "plugins/bootstrap/bootstrap.min.js" | absLangURL }}' defer></script>
 <!-- slick Carousel -->
-<script src='{{ "plugins/slick/slick.min.js" | absLangURL }}'></script>
-<script src='{{ "plugins/magnific-popup/jquery.magnific-popup.min.js" | absLangURL }}'></script>
+<script src='{{ "plugins/slick/slick.min.js" | absLangURL }}' defer></script>
+<script src='{{ "plugins/magnific-popup/jquery.magnific-popup.min.js" | absLangURL }}' defer></script>
 <!-- filter -->
-<script src='{{ "plugins/shuffle/shuffle.min.js" | absLangURL }}'></script>
-<script src='{{ "plugins/SyoTimer/jquery.syotimer.min.js" | absLangURL }}'></script>
+<script src='{{ "plugins/shuffle/shuffle.min.js" | absLangURL }}' defer></script>
+<script src='{{ "plugins/SyoTimer/jquery.syotimer.min.js" | absLangURL }}' defer></script>
 
-{{ $script := resources.Get "js/script.js" | resources.Fingerprint "sha512" | minify }}
-<script src='{{ $script.RelPermalink | absLangURL }}'></script>
+{{ $script := resources.Get "js/script.js" | minify }}
+<script src='{{ $script.RelPermalink | absLangURL }}' defer></script>
 
 <script>
   if (window.netlifyIdentity) {
