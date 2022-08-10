@@ -1,6 +1,6 @@
 ---
 title: Temperature Check
-layout: services
+layout: tours
 image: /images/untitled.png
 visible: true
 draft: false

@@ -1,6 +1,6 @@
 ---
 title: Executive Luxury Transfers
-layout: services
+layout: tours
 image: images/executive-luxury-transfers.jpg
 bookingUrl: https://booking.setmore.com/scheduleappointment/94fa39d9-3139-41a9-b47e-20d34c9be61f/services/f92bb0cb-83e3-495f-ae19-a012500aa680?source=settings
 visible: true

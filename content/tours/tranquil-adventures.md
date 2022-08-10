@@ -1,6 +1,6 @@
 ---
 title: Tranquil Adventures
-layout: services
+layout: tours
 image: /images/whatsapp-image-2022-07-28-at-9.08.48-pm.jpeg
 visible: true
 draft: false

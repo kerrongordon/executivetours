@@ -5,9 +5,9 @@ local_backend: true
 media_folder: assets/images
 public_folder: /images
 collections:
-  - name: 'services'
-    label: 'Services'
-    folder: 'content/services'
+  - name: 'tours'
+    label: 'Tours'
+    folder: 'content/tours'
     create: true
     slug: '{{slug}}'
     editor:
@@ -16,7 +16,7 @@ collections:
     fields:
       - { label: 'Title', name: 'title', widget: 'string', required: true }
       - { label: "Publish Date", name: "date", widget: "datetime" }
-      - {label: "Layout", name: "layout", widget: "hidden", default: "services"}
+      - {label: "Layout", name: "layout", widget: "hidden", default: "tours"}
       - { label: 'Image', name: 'image', widget: 'image', required: true }
       - { label: 'Tour Highlights', name: 'services', widget: 'list', fields: [ {label: "Item", name: "item", widget: "string"}] }
       - { label: 'Booking Url', name: 'bookingUrl', widget: 'string', required: false }
@@ -106,7 +106,7 @@ collections:
                   { label: 'Button Url', name: 'buttonurl', widget: 'string', required: false }
                 ]
             }
-          - { label: 'Service Section',
+          - { label: 'Tours Section',
               name: 'serviceSection',
               widget: "object",
               fields:
@@ -129,9 +129,9 @@ collections:
                   { label: 'Subtitle', name: 'subtitle', widget: 'string', required: false },
                 ]
             }
-      - file: 'content/services/_index.md'
-        label: 'Services Page'
-        name: 'services'
+      - file: 'content/tours/_index.md'
+        label: 'Tours Page'
+        name: 'tours'
         editor:
           preview: false
         fields:
@@ -177,7 +177,7 @@ collections:
                     fields:
                       [
                         { label: 'Home Page', name: 'homeEnable', widget: 'boolean' },
-                        { label: 'Service Page', name: 'serviceEnable', widget: 'boolean' },
+                        { label: 'Tours Page', name: 'serviceEnable', widget: 'boolean' },
                         { label: 'Gallery Page', name: 'galleryEnable', widget: 'boolean' },
                         { label: 'Contact Page', name: 'contactEnable', widget: 'boolean' },
                       ]

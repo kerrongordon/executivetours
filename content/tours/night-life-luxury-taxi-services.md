@@ -2,6 +2,7 @@
 title: Night Life & Luxury Taxi Services
 visible: true
 draft: false
+layout: tours
 url: /services/night-life-luxury-taxi-services
 image: images/night-life-luxury-taxi-services.jpg
 services:

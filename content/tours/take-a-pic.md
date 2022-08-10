@@ -1,6 +1,6 @@
 ---
 title: Take a Pic
-layout: services
+layout: tours
 image: /images/temperature-check.jpg
 visible: true
 draft: false

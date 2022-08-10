@@ -1,6 +1,6 @@
 ---
 title: City Tour
-layout: services
+layout: tours
 image: images/city-tour.jpg
 bookingUrl: https://booking.setmore.com/scheduleappointment/94fa39d9-3139-41a9-b47e-20d34c9be61f/services/15ba661e-79d6-4aef-9cf0-abf0ebc31b19
 visible: true

@@ -1,6 +1,6 @@
 ---
 title: Cocoa Sensation
-layout: services
+layout: tours
 image: images/cocoa-sensation.jpg
 bookingUrl: https://booking.setmore.com/scheduleappointment/94fa39d9-3139-41a9-b47e-20d34c9be61f/services/3c278d9f-229c-4fb9-af35-913e0bce15a2?source=settings
 visible: true

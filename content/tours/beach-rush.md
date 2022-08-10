@@ -1,6 +1,6 @@
 ---
 title: Beach Rush
-layout: services
+layout: tours
 image: images/beach-rush.jpg
 bookingUrl: https://booking.setmore.com/scheduleappointment/94fa39d9-3139-41a9-b47e-20d34c9be61f/services/6a1aaa23-464e-4131-b93f-d1c2e8b89cb8
 visible: true

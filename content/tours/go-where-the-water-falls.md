@@ -1,6 +1,6 @@
 ---
 title: Go Where The Water Falls
-layout: services
+layout: tours
 image: images/go-where-the-water-falls.jpg
 bookingUrl: https://booking.setmore.com/scheduleappointment/94fa39d9-3139-41a9-b47e-20d34c9be61f/services/adc71bd7-e2bc-4b6b-9344-a285a785e02b?source=settings
 visible: true

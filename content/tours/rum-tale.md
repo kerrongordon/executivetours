@@ -1,6 +1,6 @@
 ---
 title: Rum Tale
-layout: services
+layout: tours
 image: images/rum-tale.jpg
 bookingUrl: https://booking.setmore.com/scheduleappointment/94fa39d9-3139-41a9-b47e-20d34c9be61f/services/b5b3a5a4-614c-4eba-8b1b-223f070f6d68?source=settings
 visible: true

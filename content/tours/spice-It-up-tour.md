@@ -1,6 +1,6 @@
 ---
 title: Spice It Up Tour
-layout: services
+layout: tours
 image: images/spice-It-up-tour.jpg
 bookingUrl: https://booking.setmore.com/scheduleappointment/94fa39d9-3139-41a9-b47e-20d34c9be61f/services/4b0333d9-6340-42df-8341-b4b78833c547?source=settings
 visible: true
