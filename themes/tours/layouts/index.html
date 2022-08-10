@@ -103,17 +103,17 @@
       </div>
     </div>
     <div class="row">
-      {{ range first 8 (where site.RegularPages "Type" "services") }}
-      <div class="col-lg-3 col-md-4 col-sm-6">
+      {{ range first 4 (where site.RegularPages "Type" "services") }}
+      <div class="col-lg-3 col-md-6 col-sm-6">
         <a href="{{ .RelPermalink | absLangURL}}">
         <div class="service-item">
           {{ with resources.Get .Params.image }}
             {{ with .Resize ("300x webp") }}
-              <img src="{{ .RelPermalink | absLangURL}}" alt="{{ .Title }}" class="card-img-top rounded">
+              <img src="{{ .RelPermalink | absLangURL}}" alt="{{ .Title }}" class="img-fluid rounded">
             {{ end }}
             {{ end }}
           <h4>{{ .Title }}</h4>
-          <p>{{ .Content | truncate 80 }}</p>
+          <p>{{ .Content | truncate 100 }}</p>
         </div>
       </a>
       </div>

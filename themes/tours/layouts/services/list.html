@@ -13,12 +13,12 @@
       </div>
       <div class="row">
         {{ range (where site.RegularPages "Type" "services") }}
-        <div class="col-lg-4 col-md-4 col-sm-6">
+        <div class="col-lg-3 col-md-6 col-sm-6">
           <a href="{{ .RelPermalink | absLangURL}}">
           <div class="service-item">
             {{ with resources.Get .Params.image }}
             {{ with .Resize ("400x webp") }}
-              <img src="{{ .RelPermalink | absLangURL}}" class="card-img-top rounded">
+              <img src="{{ .RelPermalink | absLangURL}}" class="img-fluid rounded">
             {{ end }}
             {{ end }}
             <h4>{{ .Title }}</h4>

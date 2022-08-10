@@ -15,12 +15,13 @@ collections:
     filter: {field: "visible", value: true}
     fields:
       - { label: 'Title', name: 'title', widget: 'string', required: true }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
       - {label: "Layout", name: "layout", widget: "hidden", default: "services"}
       - { label: 'Image', name: 'image', widget: 'image', required: true }
       - { label: 'Tour Highlights', name: 'services', widget: 'list', fields: [ {label: "Item", name: "item", widget: "string"}] }
       - { label: 'Booking Url', name: 'bookingUrl', widget: 'string', required: false }
       - { label: 'Body', name: 'body', widget: 'markdown', required: true }
-      - {label: "Visible", name: "visible", widget: hidden, default: true}
+      - {label: "Visible", name: "visible", widget: boolean, default: true}
   - name: 'testimonial'
     label: 'Testimonial'
     folder: 'content/testimonial'
@@ -35,7 +36,7 @@ collections:
       - { label: 'Quote', name: 'quote', widget: "string", required: false }
       - { label: 'Image', name: 'image', widget: 'image', required: false }
       - { label: 'Client title', name: 'clientTitle', widget: 'string', required: false }
-      - {label: "Visible", name: "visible", widget: hidden, default: true}
+      - {label: "Visible", name: "visible", widget: boolean, default: true}
   - name: 'gallery'
     label: 'Gallery'
     folder: 'content/gallery'
@@ -45,10 +46,19 @@ collections:
       preview: false
     filter: {field: "visible", value: true}
     fields:
-      - { label: 'Title', name: 'title', widget: 'string', required: false }
+      - { label: 'Title', name: 'title', widget: 'string', required: true }
       - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: 'Image', name: 'image', widget: 'image', required: false }
-      - {label: "Visible", name: "visible", widget: hidden, default: true}
+      - { label: 'Thumbnail', name: 'thumbnail', widget: 'image', required: true }
+      - { label: "Visible", name: "visible", widget: boolean, default: true }
+      - { label: 'Images',
+          name: 'images',
+          widget: 'list',
+          fields:
+            [
+              {label: "title", name: "title", widget: "string"},
+              {label: "Item", name: "image", widget: "image"}
+            ]
+        }
   - name: 'pages'
     label: 'Pages'
     files:
