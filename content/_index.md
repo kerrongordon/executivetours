@@ -32,7 +32,7 @@ serviceSection:
   enable: true
   button: true
   buttontitle: View More
-  buttonurl: /services/
+  buttonurl: /tours/
   title: Our Services
   subtitle: ""
 testimonialSection:
