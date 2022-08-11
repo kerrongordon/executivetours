@@ -5,7 +5,7 @@
         <div class="user">
             {{ with resources.Get .Params.image }}
             {{ with .Resize ("100x100 webp") }}
-              <img src="{{ .RelPermalink | absLangURL}}" alt="{{ .Params.clientName }}">
+              <img src="{{ .RelPermalink | absLangURL}}" alt="{{ .Params.clientName }}" loading="lazy">
             {{ end }}
             {{ end }}
             <p><span>{{ .Params.clientName }}</span> {{ .Params.clientTitle }}</p>

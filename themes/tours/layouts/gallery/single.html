@@ -11,7 +11,7 @@
         <a class="portfolio-popup" href="{{ .RelPermalink | absLangURL}}">
           <div class="service-item">
             {{ with .Resize ("300x webp") }}
-            <img src="{{ .RelPermalink | absLangURL}}" alt="{{ $title }}" class="img-fluid rounded">
+            <img src="{{ .RelPermalink | absLangURL}}" alt="{{ $title }}" class="img-fluid rounded" loading="lazy">
             {{ end }}
             {{ end }}
             {{ end }}

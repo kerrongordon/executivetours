@@ -51,7 +51,7 @@
 				<div class="block">
           {{ with resources.Get .image }}
           {{ with .Resize ("800x webp") }}
-            <img src="{{ .RelPermalink }}" alt="{{ .Params.cover.alt }}" class="img-fluid rounded">
+            <img src="{{ .RelPermalink }}" alt="{{ .Params.cover.alt }}" class="img-fluid rounded" loading="lazy">
           {{ end }}
           {{ end }}
 				</div>
@@ -109,7 +109,7 @@
         <div class="service-item">
           {{ with resources.Get .Params.image }}
             {{ with .Resize ("300x webp") }}
-              <img src="{{ .RelPermalink | absLangURL}}" alt="{{ .Title }}" class="img-fluid rounded">
+              <img src="{{ .RelPermalink | absLangURL}}" alt="{{ .Title }}" class="img-fluid rounded" loading="lazy">
             {{ end }}
             {{ end }}
           <h4>{{ .Title }}</h4>

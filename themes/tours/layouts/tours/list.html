@@ -18,7 +18,7 @@
           <div class="service-item">
             {{ with resources.Get .Params.image }}
             {{ with .Resize ("400x webp") }}
-              <img src="{{ .RelPermalink | absLangURL}}" class="img-fluid rounded">
+              <img src="{{ .RelPermalink | absLangURL}}" class="img-fluid rounded" loading="lazy">
             {{ end }}
             {{ end }}
             <h4>{{ .Title }}</h4>
