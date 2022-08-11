@@ -1,12 +1,28 @@
 {{ define "main" }}
 
+
+
 {{ if .Page.Params.heroSection.enable }}
 {{ with .Page.Params.heroSection }}
 {{ with resources.Get .image }}
-{{ with .Resize ("1920x jpg") }}
-<section class="slider" style="background-image: url({{.RelPermalink|absLangURL}})">
+<style>
+  {{ with .Resize ("1422x800 webp") }}
+  .heroimage {
+    background-image: url({{.RelPermalink|absLangURL}});
+    background-attachment: scroll;
+  }
+  {{ end }}
+  {{ with .Fit ("770x500 webp") }}
+  @media (max-width: 767px) {
+    .heroimage {
+      background-image: url({{.RelPermalink|absLangURL}});
+      background-attachment: scroll;
+    }
+  }
+  {{ end }}
+</style>
 {{ end }}
-{{ end }}
+<section class="slider heroimage">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
@@ -51,7 +67,7 @@
 				<div class="block">
           {{ with resources.Get .image }}
           {{ with .Resize ("800x webp") }}
-            <img src="{{ .RelPermalink }}" alt="{{ .Params.cover.alt }}" class="img-fluid rounded" loading="lazy">
+            <img src="{{ .RelPermalink }}" alt="{{ .Params.cover.alt }}" class="img-fluid rounded" loading="lazy" style="width: 400px; height: 328px;">
           {{ end }}
           {{ end }}
 				</div>
@@ -66,10 +82,24 @@
 {{ if .Page.Params.heroSectionSwo.enable }}
 {{ with .Page.Params.heroSectionSwo }}
 {{ with resources.Get .image }}
-{{ with .Resize ("1200x webp") }}
-<section class="feature bg-2 overly" style="background-image: url({{.RelPermalink|absLangURL}})">
+<style>
+  {{ with .Resize ("1422x800 webp") }}
+  .heroaboutimage {
+    background-image: url({{.RelPermalink|absLangURL}});
+    background-attachment: scroll;
+  }
+  {{ end }}
+  {{ with .Fit ("770x500 webp") }}
+  @media (max-width: 767px) {
+    .heroaboutimage {
+      background-image: url({{.RelPermalink|absLangURL}});
+      background-attachment: scroll;
+    }
+  }
+  {{ end }}
+</style>
 {{ end }}
-{{ end }}
+<section class="feature bg-2 heroaboutimage overly">
   <div class="container">
     <div class="row justify-content-end">
       <div class="col-md-6">
@@ -109,7 +139,7 @@
         <div class="service-item">
           {{ with resources.Get .Params.image }}
             {{ with .Resize ("300x webp") }}
-              <img src="{{ .RelPermalink | absLangURL}}" alt="{{ .Title }}" class="img-fluid rounded" loading="lazy">
+              <img src="{{ .RelPermalink | absLangURL}}" alt="{{ .Title }}" class="img-fluid rounded" loading="lazy" style="height: 150px; width: 200px;">
             {{ end }}
             {{ end }}
           <h4>{{ .Title }}</h4>

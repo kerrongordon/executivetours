@@ -2,10 +2,24 @@
 {{ if site.Data.settings.callToAction.enable }}
 {{ with site.Data.settings.callToAction }}
 {{ with resources.Get .image }}
-{{ with .Resize ("1200x webp") }}
-<section class="call-to-action bg-1 section-sm overly" style="background-image: url({{.RelPermalink|absLangURL}})">
-{{ end }}
-{{ end }}
+<style>
+    {{ with .Resize ("1422x800 webp") }}
+    .herocta {
+      background-image: url({{.RelPermalink|absLangURL}});
+      background-attachment: scroll;
+    }
+    {{ end }}
+    {{ with .Fit ("770x500 webp") }}
+    @media (max-width: 767px) {
+      .herocta {
+        background-image: url({{.RelPermalink|absLangURL}});
+        background-attachment: scroll;
+      }
+    }
+    {{ end }}
+  </style>
+  {{ end }}
+<section class="call-to-action bg-1 section-sm herocta overly">
     <div class="container">
         <div class="row">
             <div class="col-md-12">

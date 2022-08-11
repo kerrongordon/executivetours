@@ -1,12 +1,26 @@
 {{ with site.GetPage "content/_index.md" }}
 {{ with .Page.Params.heroSection }}
 {{ with resources.Get .image }}
-{{ with .Resize ("1920x jpg") }}
-<section class="page-title bg-2" style="background-image: url({{.RelPermalink|absLangURL}})">
+<style>
+    {{ with .Resize ("1422x800 webp") }}
+    .heroall {
+      background-image: url({{.RelPermalink|absLangURL}});
+      background-attachment: scroll;
+    }
+    {{ end }}
+    {{ with .Fit ("770x500 webp") }}
+    @media (max-width: 767px) {
+      .heroall {
+        background-image: url({{.RelPermalink|absLangURL}});
+        background-attachment: scroll;
+      }
+    }
+    {{ end }}
+  </style>
   {{ end }}
   {{ end }}
   {{ end }}
-  {{ end }}
+<section class="page-title bg-2 heroall">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
