@@ -1,11 +1,16 @@
 ---
+draft: false
 title: Take a Pic
+date: 2022-09-18T00:15:49.629Z
 layout: tours
 image: /images/temperature-check.jpg
-visible: true
-draft: false
-services: null
+services:
+  - item: WELCOME STONE.
+  - item: RAINFOREST.
+  - item: "CITY VIEWS "
+  - item: " SUNSET VIEWS [OCEAN VIEW ]"
 bookingUrl: https://booking.setmore.com/scheduleappointment/94fa39d9-3139-41a9-b47e-20d34c9be61f/services/54379d8f-e14a-4ed4-b49a-9179d117cc7e?source=settings
+visible: true
 ---
 
 Tired of the hustle and bustle of the city? Why not venture up to the north of the island to the boardwalk which extends into the tranquil waters of Levera Pond.
