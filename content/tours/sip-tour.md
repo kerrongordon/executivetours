@@ -1,11 +1,13 @@
 ---
+draft: false
 title: Sip & Tour
+date: 2022-09-18T00:13:19.771Z
 layout: tours
 image: images/sip-tour.jpg
+services:
+  - item: MOBILE COCKTAILS BAR ON BOARD.
 bookingUrl: https://booking.setmore.com/scheduleappointment/94fa39d9-3139-41a9-b47e-20d34c9be61f/services/3410c8ca-9817-45f8-a230-228fbc4507fd?source=settings
 visible: true
-draft: false
-services: null
 ---
 
 Our Signature Tour allows you to take any one of our amazing excursions and turn it into a private tour. Apart from all the wondrous tour highlights and adventures, our signature tour is all inclusive of food, snacks, our famous Grenadian Rum Punch and a well-stocked bar on board.
